@@ -54,7 +54,7 @@ elif ambiance.startswith("💃"):
         unsafe_allow_html=True,
     )
 
-st.sidebar.subheader("👾 Join KIN 201 on Discord", divider=True)
+st.sidebar.subheader("👾 Join Discord", divider=True)
 
 st.sidebar.markdown(
     """
