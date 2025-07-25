@@ -95,15 +95,15 @@ st.write(to_argadz)
 
 script = f"""
 <script>
-    var msgFRENCH = new SpeechSynthesisUtterance("traduction un petit peu foireuse en argadz: "+{to_argadz!r});
-    msgINTRO.lang = 'FR-fr';
-    msgINTRO.rate = 1.1;
+    var msgARGADZ = new SpeechSynthesisUtterance("traduction un petit peu foireuse en argadz: "+{to_argadz!r});
+    msgARGADZ.lang = 'FR-fr';
+    msgARGADZ.rate = 1.1;
 
 
 
     function speak() {{
         window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(msgFRENCH);
+        window.speechSynthesis.speak(msgARGADZ);
         
     }}
 
@@ -144,8 +144,8 @@ st.write(to_french)
 script = f"""
 <script>
     var msgFRENCH = new SpeechSynthesisUtterance("traduction complètement foireuse en français: "+{to_french!r});
-    msgINTRO.lang = 'FR-fr';
-    msgINTRO.rate = 1.1;
+    msgFRENCH.lang = 'FR-fr';
+    msgFRENCH.rate = 1.1;
 
 
 
