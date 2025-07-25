@@ -95,7 +95,7 @@ st.write(to_argadz)
 
 script = f"""
 <script>
-    var msgARGADZ = new SpeechSynthesisUtterance("traduction un petit peu foireuse en argadz: "+{to_argadz!r});
+    var msgARGADZ = new SpeechSynthesisUtterance("traduction un petit peu foireuse du Gorgs en argadz: "+{to_argadz!r});
     msgARGADZ.lang = 'FR-fr';
     msgARGADZ.rate = 1.1;
 
@@ -143,7 +143,7 @@ st.write(to_french)
 
 script = f"""
 <script>
-    var msgFRENCH = new SpeechSynthesisUtterance("traduction complètement foireuse en français: "+{to_french!r});
+    var msgFRENCH = new SpeechSynthesisUtterance("traduction complètement foireuse du Gorgs en français: "+{to_french!r});
     msgFRENCH.lang = 'FR-fr';
     msgFRENCH.rate = 1.1;
 
