@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 st.logo(
-    "https://img.icons8.com/?size=100&id=s5NUIabJrb4C&format=png&color=000000",
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
     size="large",
 )
 
@@ -60,14 +60,14 @@ st.sidebar.subheader("👾 Join Discord", divider=True)
 st.sidebar.markdown(
     """
     <a href="https://discord.gg/6bxmWMW3GM" target="_blank">
-        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png" width="100%"; />
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
 )
 
 
-st.sidebar.subheader("🤓 K'PTN' 42 @ KIN 201", divider=True)
+st.sidebar.subheader("🤓 Net Send on the LAN", divider=True)
 
 st.sidebar.markdown(
     """
@@ -77,6 +77,12 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+st.sidebar.divider()
+st.sidebar.image(
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
+)
+
 
 ###############################################################################################################
 
