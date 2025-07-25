@@ -67,7 +67,7 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader("🤓 Phi's promo", divider=True)
+st.sidebar.subheader("🤓 K'PTN' 42 @ KIN 201", divider=True)
 
 st.sidebar.markdown(
     """
