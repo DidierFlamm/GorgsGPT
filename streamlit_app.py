@@ -52,6 +52,8 @@ elif ambiance.startswith("💃"):
         unsafe_allow_html=True,
     )
 
+st.sidebar.divider()
+
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
 )
