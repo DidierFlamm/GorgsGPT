@@ -19,7 +19,7 @@ st.logo(
 )
 
 
-st.sidebar.subheader("Videals", divider=True)
+st.sidebar.subheader("📽️ Videals", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
@@ -54,15 +54,34 @@ elif ambiance.startswith("💃"):
         unsafe_allow_html=True,
     )
 
-st.sidebar.divider()
+st.sidebar.subheader("👾 Join KIN 201 on Discord", divider=True)
 
-st.sidebar.image(
-    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
+st.sidebar.markdown(
+    """
+    <a href="https://discord.gg/6bxmWMW3GM" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
 )
+
+
+st.sidebar.subheader("🤓 Phi's promo", divider=True)
+
+st.sidebar.markdown(
+    """
+    <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
+        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
+###############################################################################################################
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
 
-st.write("French to Argad'z")
+st.subheader("French to Argad'z")
 
 st.text_input(
     "Prompt en Français",
@@ -71,10 +90,12 @@ st.text_input(
 
 if st.button("Affole les Watts!"):
     st.write("🚧😬🚧")
+else:
+    st.write("Résultat")
 
 st.divider()
 
-st.write("Argad'z to French")
+st.subheader("Argad'z to French")
 
 st.text_input(
     "Prompt en Argad'z",
@@ -83,5 +104,24 @@ st.text_input(
 
 if st.button("Keud's de Watts!"):
     st.write("🚧😅🚧")
+else:
+    st.write("Résultat")
 
 st.divider()
+
+st.subheader("Vocb's")
+
+with st.expander("📖 Afficher le dictionnaire"):
+    st.write("🚧🤓🚧")
+
+st.divider()
+
+st.markdown(
+    """
+    <div style='text-align: center; font-size: small; color: gray;'>
+    🎁 GorgsGPT est une application Open Source offerte à la prom's KIN 226 par sa prom's marraine KIN 201 🎁<br>
+    © 2025 Didier FLAMM feat. KIN 201
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
