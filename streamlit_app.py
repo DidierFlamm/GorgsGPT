@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
+import streamlit.components.v1 as components
 
 # set_page_config() can only be called once per app page, and must be called as the first Streamlit command in your script.
 st.set_page_config(
@@ -83,33 +84,100 @@ st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
 
 st.subheader("French to Argad'z")
 
-st.text_input(
+french = st.text_input(
     "Prompt en Français",
     key="french",
 )
 
-if st.button("Affole les Watts!"):
-    st.write("🚧😬🚧")
-else:
-    st.write("Résultat")
+to_argadz = french  #####################
 
-st.divider()
+st.write(to_argadz)
+
+script = f"""
+<script>
+    var msgFRENCH = new SpeechSynthesisUtterance("traduction un petit peu foireuse en argadz: "+{to_argadz!r});
+    msgINTRO.lang = 'FR-fr';
+    msgINTRO.rate = 1.1;
+
+
+
+    function speak() {{
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(msgFRENCH);
+        
+    }}
+
+    function stop() {{
+        window.speechSynthesis.cancel();
+    }}
+</script>
+"""
+
+(col1, col2, *_) = st.columns(4, vertical_alignment="center")
+
+with col1:
+    components.html(
+        script + """<button onclick="speak()">🗣️<br>Affole les Watts !</button>""",
+        height=45,
+    )
+
+with col2:
+    components.html(
+        script + """<button onclick="stop()">🔇<br>Sacque toi !</button>""",
+        height=45,
+    )
+
+st.divider()  ########################################################################################
 
 st.subheader("Argad'z to French")
 
-st.text_input(
+argadz = st.text_input(
     "Prompt en Argad'z",
     key="argadz",
 )
 
-if st.button("Keud's de Watts!"):
-    st.write("🚧😅🚧")
-else:
-    st.write("Résultat")
 
-st.divider()
+to_french = argadz  #######################
 
-st.subheader("Vocb's")
+st.write(to_french)
+
+script = f"""
+<script>
+    var msgFRENCH = new SpeechSynthesisUtterance("traduction complètement foireuse en français: "+{to_french!r});
+    msgINTRO.lang = 'FR-fr';
+    msgINTRO.rate = 1.1;
+
+
+
+    function speak() {{
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(msgFRENCH);
+        
+    }}
+
+    function stop() {{
+        window.speechSynthesis.cancel();
+    }}
+</script>
+"""
+
+(col1, col2, *_) = st.columns(4, vertical_alignment="center")
+
+with col1:
+    components.html(
+        script + """<button onclick="speak()">🗣️<br>Keud's de Watts !</button>""",
+        height=45,
+    )
+
+with col2:
+    components.html(
+        script + """<button onclick="stop()">🔇<br>La gerbe !</button>""",
+        height=45,
+    )
+
+st.divider()  ############################################################################################
+
+st.subheader("Vocab's")
 
 with st.expander("📖 Afficher le dictionnaire"):
     st.write("🚧🤓🚧")
