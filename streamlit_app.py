@@ -24,6 +24,28 @@ st.logo(
     size="large",
 )
 
+# Charger la police gothique Arts & Métiers via Google Fonts
+GOTHIC_CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+.gothic-text {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2em;
+    color: black;
+}
+</style>
+"""
+
+st.markdown(GOTHIC_CSS, unsafe_allow_html=True)
+
+
+def st_gothic(text: str, size: str = "2em"):
+    html = f"""
+    <div class="gothic-text" style="font-size:{size}; color: inherit;">{text}</div>
+    """
+    st.markdown(html, unsafe_allow_html=True)
+
 
 st.sidebar.subheader("📽️ Videals", divider=True)
 
@@ -102,7 +124,7 @@ french = st.text_input(
 
 to_argadz = french  #####################
 
-st.write(to_argadz)
+st_gothic(to_argadz)
 
 script = f"""
 <script>
@@ -150,7 +172,7 @@ argadz = st.text_input(
 
 to_french = argadz  #######################
 
-st.write(to_french)
+st_gothic(to_french)
 
 script = f"""
 <script>
