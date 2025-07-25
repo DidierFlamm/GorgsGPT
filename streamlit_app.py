@@ -23,7 +23,7 @@ st.sidebar.subheader("📽️ Videals", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "👫 KIN 201", "💃 Strass Academy"),
+    ("🔇 Silent mode", "👫 La KIN 201", "💃 Strass Academy"),
     label_visibility="collapsed",
 )
 
@@ -34,7 +34,7 @@ if ambiance.startswith("👫"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2001 KIN 201
+    © 2001 La KIN 201
     </div>
     """,
         unsafe_allow_html=True,
