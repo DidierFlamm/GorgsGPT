@@ -21,7 +21,7 @@ st.logo(
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "👫 KIN 201", "💃🕺 Strass Academy"),
+    ("🔇 Silent mode", "👫 KIN 201", "💃 Strass Academy"),
     label_visibility="collapsed",
 )
 
@@ -39,7 +39,7 @@ if ambiance.startswith("👫"):
     )
 
 
-elif ambiance.startswith("💃🕺"):
+elif ambiance.startswith("💃"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
@@ -57,3 +57,27 @@ st.sidebar.image(
 )
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
+
+st.write("French to Argad'z")
+
+st.text_input(
+    "Prompt en Français",
+    key="french",
+)
+
+if st.button("Affole les Watts!"):
+    st.write("🚧😬🚧")
+
+st.divider()
+
+st.write("Argad'z to French")
+
+st.text_input(
+    "Prompt en Argad'z",
+    key="argadz",
+)
+
+if st.button("Keud's de Watts!"):
+    st.write("🚧😅🚧")
+
+st.divider()
