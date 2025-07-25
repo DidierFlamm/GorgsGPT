@@ -3,15 +3,20 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # set_page_config() can only be called once per app page, and must be called as the first Streamlit command in your script.
+
+
 st.set_page_config(
+    page_title="GorgsGPT for KIN 226",
+    page_icon="🎁",
+    initial_sidebar_state="expanded",
     menu_items={
         "Get Help": None,
-        "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20titanic-survival-predictor%20Streamlit%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
+        "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
 © 2025 Didier Flamm  
 ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
 """,
-    }
+    },
 )
 
 st.logo(
