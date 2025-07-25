@@ -19,6 +19,8 @@ st.logo(
 )
 
 
+st.sidebar.subheader("Videals", divider=True)
+
 ambiance = st.sidebar.radio(
     "Select ambiance",
     ("🔇 Silent mode", "👫 KIN 201", "💃 Strass Academy"),
