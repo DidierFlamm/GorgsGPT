@@ -39,7 +39,7 @@ if ambiance.startswith("👫"):
     )
 
 
-if ambiance.startswith("💃🕺"):
+elif ambiance.startswith("💃🕺"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=True, muted=False)
 
@@ -51,5 +51,9 @@ if ambiance.startswith("💃🕺"):
     """,
         unsafe_allow_html=True,
     )
+
+st.sidebar.image(
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
+)
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
