@@ -82,7 +82,7 @@ elif ambiance.startswith("💃"):
         unsafe_allow_html=True,
     )
 
-st.sidebar.subheader("👾 Join Discord", divider=True)
+st.sidebar.subheader("👾 Join us on Discord", divider=True)
 
 st.sidebar.markdown(
     """
