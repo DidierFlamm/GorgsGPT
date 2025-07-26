@@ -243,10 +243,9 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    🎁 GorgsGPT est une application Open Source offerte à la prom's KIN 226 par sa prom's marraine KIN 201 🎁<br>
-    🤗 Les réponses de GorgsGPT sont générées via l'API Open Source de 
-    <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a> 🤗<br>
-    © 2025 Didier FLAMM feat. KIN 201 🫶
+    🎁 À KIN 226, ce cadeau de bienvenue offert par ta prom's ma² KIN 201 s’appuie sur la puissance des Trad's de notre réseau Gad'z !<br>
+    🤗 GorgsGPT est une application Open Source dont les réponses sont générées par l'API <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face Open Source.</a><br>
+    © 2025 KIN 201 🫶
     </div>
     """,
     unsafe_allow_html=True,
