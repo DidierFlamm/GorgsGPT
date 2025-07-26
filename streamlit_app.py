@@ -181,7 +181,7 @@ st.subheader("Argad'z to French")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's ! Le Phi'sss a la méga gerbe... Bel eff's !",
+    value="Il est pas norm's ton Num's ! Le Gorg's a la méga gerbe... Bel eff's !",
     key="argadz",
 )
 
@@ -225,6 +225,11 @@ with col2:
         script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
         height=45,
     )
+
+st.divider()  ########################################################################################
+
+st.subheader("ChatBot")
+st.write("coming soon...")
 
 st.divider()  ############################################################################################
 
