@@ -229,7 +229,7 @@ st.divider()  ##################################################################
 
 st.subheader("Vocab's")
 
-with st.expander("📖 Afficher le dictionnaire"):
+with st.expander("📖 Afficher le dictionnaire Argad'z"):
     st.write("🚧🤓🚧")
 
 st.divider()
