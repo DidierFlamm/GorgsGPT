@@ -143,6 +143,9 @@ script = f"""
     msgARGADZ.lang = 'FR-fr';
     msgARGADZ.rate = 1.1;
 
+    var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
+    msgARGADZ.lang = 'FR-fr';
+    msgARGADZ.rate = 1.1;
 
 
     function speak() {{
@@ -153,6 +156,7 @@ script = f"""
 
     function stop() {{
         window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(msgSTOP)
     }}
 </script>
 """
@@ -167,7 +171,7 @@ with col1:
 
 with col2:
     components.html(
-        script + """<button onclick="stop()">🔇<br>Sacque toi !</button>""",
+        script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
         height=45,
     )
 
@@ -191,16 +195,18 @@ script = f"""
     msgFRENCH.lang = 'FR-fr';
     msgFRENCH.rate = 1.1;
 
-
+    var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
+    msgARGADZ.lang = 'FR-fr';
+    msgARGADZ.rate = 1.1;
 
     function speak() {{
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(msgFRENCH);
-        
     }}
 
     function stop() {{
         window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(msgSTOP)
     }}
 </script>
 """
@@ -215,7 +221,7 @@ with col1:
 
 with col2:
     components.html(
-        script + """<button onclick="stop()">🔇<br>La gerbe !</button>""",
+        script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
         height=45,
     )
 
