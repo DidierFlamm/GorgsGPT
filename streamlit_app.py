@@ -94,7 +94,7 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader("🤓 Net Send on the LAN", divider=True)
+st.sidebar.subheader("🤓 View K'PTN' 42 apps", divider=True)
 
 st.sidebar.markdown(
     """
