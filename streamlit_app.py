@@ -181,6 +181,7 @@ st.subheader("Argad'z to French")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
+    value="Il est pas norm's ton Num's ! Le Phi'sss a la méga gerbe... Bel eff's !",
     key="argadz",
 )
 
