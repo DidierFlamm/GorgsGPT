@@ -51,7 +51,7 @@ st.sidebar.subheader("📽️ Videals", divider=True)
 
 ambiance = st.sidebar.radio(
     "Select ambiance",
-    ("🔇 Silent mode", "👫 La KIN 201", "💃 Strass Academy"),
+    ("🔇 Silent mode", "👫 La KIN 201", "💃 Le Prime de (Z)²"),
     label_visibility="collapsed",
 )
 
