@@ -118,13 +118,8 @@ st.sidebar.markdown(
 
 st.sidebar.subheader("A la Fratern's !", divider=True)
 
-st.sidebar.markdown(
-    """
-    <a href="https://www.arts-et-metiers.asso.fr" target="_blank">
-        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png" width="100%"; />
-    </a>
-    """,
-    unsafe_allow_html=True,
+st.sidebar.image(
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
 )
 
 ###############################################################################################################
