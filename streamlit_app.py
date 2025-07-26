@@ -105,11 +105,27 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.divider()
-st.sidebar.image(
-    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
+st.sidebar.subheader("Site de la Soce", divider=True)
+
+st.sidebar.markdown(
+    """
+    <a href="https://www.arts-et-metiers.asso.fr" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amalumni.webp" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
 )
 
+st.sidebar.subheader("A la Fratern's !", divider=True)
+
+st.sidebar.markdown(
+    """
+    <a href="https://www.arts-et-metiers.asso.fr" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
 
 ###############################################################################################################
 
@@ -124,7 +140,7 @@ french = st.text_input(
 
 to_argadz = french  #####################
 
-st_gothic(to_argadz)
+st_gothic("🚧 " + to_argadz + " 🚧")
 
 script = f"""
 <script>
@@ -172,7 +188,7 @@ argadz = st.text_input(
 
 to_french = argadz  #######################
 
-st_gothic(to_french)
+st_gothic("🚧 " + to_french + " 🚧")
 
 script = f"""
 <script>
