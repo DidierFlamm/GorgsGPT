@@ -62,7 +62,7 @@ if ambiance.startswith("👫"):
     st.sidebar.markdown(
         """
     <div style='text-align: center; font-size: small; color: gray;'>
-    © 2001 La KIN 201
+    © 2001 Road feat. Dany
     </div>
     """,
         unsafe_allow_html=True,
