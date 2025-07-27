@@ -47,42 +47,70 @@ def st_gothic(text: str, size: str = "2em"):
     st.markdown(html, unsafe_allow_html=True)
 
 
-st.sidebar.subheader("📽️ Videals", divider=True)
+def st_norms(text: str, size: str = "2em"):
+    html = f"""
+    <div style="font-size:{size}; color: inherit;">{text}</div>
+    """
+    st.markdown(html, unsafe_allow_html=True)
 
-ambiance = st.sidebar.radio(
-    "Select ambiance",
-    ("🔇 Silent mode", "👫 La KIN 201", "💃 Le Prime de (Z)²"),
-    label_visibility="collapsed",
+
+st.sidebar.subheader(":violet[Gadzarts]", divider=True)  ########################
+
+tabagns = st.sidebar.selectbox(
+    "Choisis un Tabagn's",
+    (
+        "KIN (Aix-en-Provence)",
+        "? (Angers)",
+        "Bordel's (Bordeaux)",
+        "Châlon's (Châlons-en-Champagne)",
+        "Clun's (Cluny)",
+        "? (Lille)",
+        "? (Metz)",
+    ),
 )
 
-if ambiance.startswith("👫"):
+proms = st.sidebar.select_slider("Choisis une Prom's", options=range(150, 226))
+
+
+st.sidebar.subheader(
+    f":violet[{tabagns.split(" ")[0]} {proms}]", divider=True
+)  ########################
+
+st.sidebar.write(":violet[photo et/ou video YouTube]")
+
+pg = st.sidebar.selectbox(
+    "Choisis un PG",
+    (
+        "Road Runner 999",
+        "...",
+    ),
+)
+
+if pg.endswith(str(999)):
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
-    st.sidebar.video(video_url, autoplay=True, muted=False)
+    st.sidebar.video(video_url, autoplay=False, muted=False)
+else:
+    st.sidebar.write(":violet[photo 2001]")
+    st.sidebar.write(":violet[photo 2025]")
+    st.sidebar.write(":violet[Video (optionnelle)]")
 
-    st.sidebar.markdown(
-        """
-    <div style='text-align: center; font-size: small; color: gray;'>
-    © 2001 Road feat. Dany
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
+strass = st.sidebar.selectbox(
+    "Choisis une Strass",
+    (
+        "Strass Academy",
+        "...",
+    ),
+)
 
-
-elif ambiance.startswith("💃"):
+if strass == "Strass Academy":
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
-    st.sidebar.video(video_url, autoplay=True, muted=False)
+    st.sidebar.video(video_url, autoplay=False, muted=False)
+else:
+    st.sidebar.write(":violet[photo et/ou video YouTube]")
 
-    st.sidebar.markdown(
-        """
-    <div style='text-align: center; font-size: small; color: gray;'>
-    © 2001 Strass Academy
-    </div>
-    """,
-        unsafe_allow_html=True,
-    )
-
-st.sidebar.subheader("👾 Join us on Discord", divider=True)
+st.sidebar.subheader(
+    ":violet[👾 Rejoins-nous sur Discord]", divider=True
+)  ########################################
 
 st.sidebar.markdown(
     """
@@ -94,18 +122,9 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader("🤓 View K'PTN' 42 apps", divider=True)
-
-st.sidebar.markdown(
-    """
-    <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
-        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.sidebar.subheader("Site de la Soce", divider=True)
+st.sidebar.subheader(
+    ":violet[Site de la Soce]", divider=True
+)  ####################################
 
 st.sidebar.markdown(
     """
@@ -116,7 +135,24 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader("A la Fratern's !", divider=True)
+st.sidebar.subheader(":violet[Les Gadzarts sur Wikipedia]", divider=True)
+
+st.sidebar.link_button("Aller sur Wikipedia", "https://fr.wikipedia.org/wiki/Gadzarts")
+
+st.sidebar.subheader(
+    ":violet[🤓 Les apps de K'PTN' 42]", divider=True
+)  ########################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
+        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(":violet[💜 Longue vie à la Fratern's]", divider=True)
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
@@ -126,10 +162,11 @@ st.sidebar.image(
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
 
-st.subheader("French to Argad'z")
+st.subheader(":violet[French to Argad'z]")
 
 french = st.text_input(
     "Prompt en Français",
+    value="Je ne comprends rien à cette appli, explique-moi comment ça fonctionne !",
     key="french",
 )
 
@@ -177,7 +214,7 @@ with col2:
 
 st.divider()  ########################################################################################
 
-st.subheader("Argad'z to French")
+st.subheader(":violet[Argad'z to French]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
@@ -188,7 +225,7 @@ argadz = st.text_input(
 
 to_french = argadz  #######################
 
-st_gothic("🚧 " + to_french + " 🚧")
+st_norms("🚧 " + to_french + " 🚧")
 
 script = f"""
 <script>
@@ -228,12 +265,12 @@ with col2:
 
 st.divider()  ########################################################################################
 
-st.subheader("ChatBot")
-st.write("coming soon...")
+st.subheader(":violet[ChatBot]")
+st.text_area("coming soon...", disabled=True)
 
 st.divider()  ############################################################################################
 
-st.subheader("Vocab's")
+st.subheader(":violet[Vocab's]")
 
 with st.expander("📖 Afficher le dictionnaire Argad'z"):
     st.write("🚧🤓🚧")
@@ -244,7 +281,7 @@ st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
     🎁 À KIN 226, ce cadeau de bienvenue offert par ta prom's ma² KIN 201 s’appuie sur la puissance des Trad's de notre réseau Gad'z !<br>
-    🤗 GorgsGPT est une application Open Source dont les réponses sont générées par l'API <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a> Open Source.<br>
+    🤗 GorgsGPT est un ChatBot Open Source basé sur l'API Open Source de <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a>.<br>
     © 2026 KIN 201 🫶
     </div>
     """,
