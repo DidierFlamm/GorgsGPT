@@ -54,7 +54,7 @@ def st_norms(text: str, size: str = "2em"):
     st.markdown(html, unsafe_allow_html=True)
 
 
-st.sidebar.subheader(":violet[Gadzarts]", divider=True)  ########################
+st.sidebar.subheader(":violet[Prom's]", divider=True)  ########################
 
 tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's",
@@ -69,11 +69,11 @@ tabagns = st.sidebar.selectbox(
     ),
 )
 
-proms = st.sidebar.select_slider("Choisis une Prom's", options=range(150, 226))
+anns = st.sidebar.select_slider("Choisis une Ann's", options=range(150, 226), value=201)
 
 
 st.sidebar.subheader(
-    f":violet[{tabagns.split(" ")[0]} {proms}]", divider=True
+    f":violet[{tabagns.split(" ")[0]} {anns}]", divider=True
 )  ########################
 
 st.sidebar.write(":green[photo et/ou video YouTube]")
