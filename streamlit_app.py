@@ -60,12 +60,12 @@ tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's",
     (
         "KIN (Aix-en-Provence)",
-        "? (Angers)",
+        "Boquette (Angers)",
         "Bordel's (Bordeaux)",
         "Châlon's (Châlons-en-Champagne)",
         "Clun's (Cluny)",
-        "? (Lille)",
-        "? (Metz)",
+        "Bir's (Lille)",
+        "Cyber's (Metz)",
     ),
 )
 
