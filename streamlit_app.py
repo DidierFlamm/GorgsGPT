@@ -76,7 +76,7 @@ st.sidebar.subheader(
     f":violet[{tabagns.split(" ")[0]} {proms}]", divider=True
 )  ########################
 
-st.sidebar.write(":violet[photo et/ou video YouTube]")
+st.sidebar.write(":green[photo et/ou video YouTube]")
 
 pg = st.sidebar.selectbox(
     "Choisis un PG",
@@ -90,9 +90,9 @@ if pg.endswith(str(999)):
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
-    st.sidebar.write(":violet[photo 2001]")
-    st.sidebar.write(":violet[photo 2025]")
-    st.sidebar.write(":violet[Video (optionnelle)]")
+    st.sidebar.write(":green[photo 2001]")
+    st.sidebar.write(":green[photo 2025]")
+    st.sidebar.write(":green[Video (optionnelle)]")
 
 strass = st.sidebar.selectbox(
     "Choisis une Strass",
@@ -106,10 +106,10 @@ if strass == "Strass Academy":
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
-    st.sidebar.write(":violet[photo et/ou video YouTube]")
+    st.sidebar.write(":green[photo et/ou video YouTube]")
 
 st.sidebar.subheader(
-    ":violet[👾 Rejoins-nous sur Discord]", divider=True
+    ":violet[👾 Rejoins notre Discord]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -152,7 +152,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader(":violet[💜 Longue vie à la Fratern's]", divider=True)
+st.sidebar.subheader(":violet[💜 Fratern's]", divider=True)
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
