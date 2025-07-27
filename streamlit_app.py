@@ -114,7 +114,7 @@ st.sidebar.subheader(
 
 st.sidebar.markdown(
     """
-    <a href="https://discord.gg/6bxmWMW3GM" target="_blank">
+    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
         <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png" width="100%"; />
     </a>
     """,
