@@ -197,8 +197,11 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.sidebar.markdown(
+    "<p style='text-align: center; font-size: 14px; color: gray;'>© Didier FLAMM</p>",
+    unsafe_allow_html=True,
+)
 
-st.sidebar.caption("© Didier FLAMM")
 
 st.sidebar.divider()
 
