@@ -109,18 +109,30 @@ else:
     st.sidebar.write(":green[photo et/ou video YouTube]")
 
 st.sidebar.subheader(
-    ":violet[👾 Rejoins notre Discord]", divider=True
+    ":violet[👾 GorgsGPT sur Discord]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
     """
     <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
-        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png" width="100%"; />
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Discord.webp" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
 )
 
+st.sidebar.subheader(
+    ":violet[👾 GorgsGPT sur LinkedIn]", divider=True
+)  ########################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/LinkedIn.webp" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.sidebar.subheader(
     ":violet[Site de la Soce]", divider=True
