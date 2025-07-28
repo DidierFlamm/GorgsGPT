@@ -114,7 +114,7 @@ if pg.endswith(str(999)):
 else:
 
     st.sidebar.caption(
-        "⚠️ En respect des obligations RGPD et du droit à la vie privée (Code civil, article 9), la liste sera limitée aux Bucques et aux Fam’s."
+        "⚠️ En respect des obligations RGPD et du droit à la vie privée (Code civil, article 9), la liste sera limitée aux Bucques + Fam’s."
     )
 
     st.sidebar.write(
