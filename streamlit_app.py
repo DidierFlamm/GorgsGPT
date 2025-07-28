@@ -162,7 +162,7 @@ st.sidebar.image(
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
 
-st.subheader(":violet[French to Argad'z]")
+st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
@@ -172,7 +172,7 @@ french = st.text_input(
 
 to_argadz = french  #####################
 
-st_gothic("🚧 " + to_argadz + " 🚧")
+st_gothic("💬 " + to_argadz)
 
 script = f"""
 <script>
@@ -214,7 +214,7 @@ with col2:
 
 st.divider()  ########################################################################################
 
-st.subheader(":violet[Argad'z to French]")
+st.subheader(":violet[🚧 Argad'z to French 🚧]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
@@ -225,7 +225,7 @@ argadz = st.text_input(
 
 to_french = argadz  #######################
 
-st_norms("🚧 " + to_french + " 🚧")
+st_norms("💬 " + to_french)
 
 script = f"""
 <script>
@@ -265,7 +265,7 @@ with col2:
 
 st.divider()  ########################################################################################
 
-st.subheader(":violet[ChatBot]")
+st.subheader(":violet[🚧 ChatBot 🚧]")
 st.text_area("coming soon...", disabled=True)
 
 st.divider()  ############################################################################################
@@ -273,15 +273,15 @@ st.divider()  ##################################################################
 st.subheader(":violet[Vocab's]")
 
 with st.expander("📖 Afficher le dictionnaire Argad'z"):
-    st.write("🚧🤓🚧")
+    st.write("🚧 👷 🚧")
 
 st.divider()
 
 st.markdown(
     """
     <div style='text-align: center; font-size: small; color: gray;'>
-    🎁 À KIN 226, ce cadeau de bienvenue offert par ta prom's ma² KIN 201 s’appuie sur la puissance des Trad's de notre réseau Gad'z !<br>
-    🤗 GorgsGPT est un ChatBot Open Source basé sur l'API Open Source de <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a>.<br>
+    🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
+    🤗 GorgsGPT est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a>.<br>
     © 2026 KIN 201 🫶
     </div>
     """,
