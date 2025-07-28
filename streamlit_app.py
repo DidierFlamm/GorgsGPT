@@ -202,7 +202,7 @@ st.sidebar.divider()
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
-    caption="© Guiral LACOTTE",
+    caption="Image par Guiral LACOTTE",
 )
 
 ###############################################################################################################
