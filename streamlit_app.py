@@ -201,7 +201,8 @@ st.sidebar.markdown(
 st.sidebar.divider()
 
 st.sidebar.image(
-    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
+    caption="© Guiral LACOTTE",
 )
 
 ###############################################################################################################
