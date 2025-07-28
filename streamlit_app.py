@@ -54,7 +54,7 @@ def st_norms(text: str, size: str = "2em"):
     st.markdown(html, unsafe_allow_html=True)
 
 
-st.sidebar.subheader(":violet[Prom's]", divider=True)  ########################
+st.sidebar.subheader(":green[Prom's]", divider=True)  ########################
 
 tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's",
@@ -73,7 +73,7 @@ anns = st.sidebar.select_slider("Choisis une Ann's", options=range(150, 226), va
 
 
 st.sidebar.subheader(
-    f":violet[{tabagns.split(" ")[0]} {anns}]", divider=True
+    f"{tabagns.split(" ")[0]} {anns}", divider=True
 )  ########################
 
 st.sidebar.write(":green[photo et/ou video YouTube]")
@@ -108,6 +108,20 @@ if strass == "Strass Academy":
 else:
     st.sidebar.write(":green[photo et/ou video YouTube]")
 
+
+st.sidebar.subheader(
+    ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
+)  ########################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://www.linkedin.com/groups/13343076/" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/LinkedIn.webp" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.sidebar.subheader(
     ":violet[👾 GorgsGPT sur Discord]", divider=True
 )  ########################################
@@ -121,21 +135,9 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader(
-    ":violet[👾 GorgsGPT sur LinkedIn]", divider=True
-)  ########################################
-
-st.sidebar.markdown(
-    """
-    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
-        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/LinkedIn.webp" width="100%"; />
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
 
 st.sidebar.subheader(
-    ":violet[Site de la Soce]", divider=True
+    ":orange[🤝 Site de la Soce]", divider=True
 )  ####################################
 
 st.sidebar.markdown(
@@ -147,12 +149,12 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader(":violet[Les Gadzarts sur Wikipedia]", divider=True)
+st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
 
-st.sidebar.link_button("Aller sur Wikipedia", "https://fr.wikipedia.org/wiki/Gadzarts")
+st.sidebar.link_button("👉 Wikipedia", "https://fr.wikipedia.org/wiki/Gadzarts")
 
 st.sidebar.subheader(
-    ":violet[🤓 Les apps de K'PTN' 42]", divider=True
+    "👀 App's de K'PTN' 42", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -164,7 +166,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader(":violet[💜 Fratern's]", divider=True)
+st.sidebar.divider()
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png"
@@ -178,7 +180,7 @@ st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="Je ne comprends rien à cette appli, explique-moi comment ça fonctionne !",
+    value="J'entrave que dalle à cette appli, explique-moi comment ça fonctionne stp !",
     key="french",
 )
 
@@ -230,7 +232,7 @@ st.subheader(":violet[🚧 Argad'z to French 🚧]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's ! Le Gorg's a la méga gerbe... Bel eff's !",
+    value="Il est pas norm's ton Num's, bord's ! Le Gorg's a la méga gerbe, y a keud's de Fratern's dans ce Tabagn's",
     key="argadz",
 )
 
