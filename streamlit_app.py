@@ -173,9 +173,8 @@ st.sidebar.markdown(
 st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
 
 st.sidebar.link_button(
-    "Wikipedia",
+    "Ouvrir l’article Wikipédia",
     "https://fr.wikipedia.org/wiki/Gadzarts",
-    icon="👉",
     use_container_width=True,
 )
 
