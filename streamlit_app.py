@@ -135,7 +135,7 @@ if strass.endswith("Strass Academy"):
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
     st.sidebar.write(":green[<contenu optionnel à l'initiative de la strass>]")
-    st.sidebar.caption("soumis à l'acceptation préalable des co-strass concernés")
+    st.sidebar.caption("soumis à l'acceptation préalable des co-strass")
 
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
