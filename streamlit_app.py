@@ -102,33 +102,40 @@ with st.sidebar:
 pg = st.sidebar.selectbox(
     "Choisis un PG",
     (
-        "Road Runner 999",
-        "...",
+        "[Bucque] [Fam's]",
+        "exemple: Road 999",
     ),
 )
+
 
 if pg.endswith(str(999)):
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
-    st.sidebar.write(":green[photo 2001]")
-    st.sidebar.write(":green[photo 2025]")
-    st.sidebar.write(":green[Video (optionnelle)]")
+
+    st.sidebar.caption(
+        "⚠️ En respect des obligations RGPD et du droit à la vie privée (Code civil, article 9), la liste sera limitée aux Bucques et aux Fam’s."
+    )
+
+    st.sidebar.write(
+        ":green[<contenu optionnel à l'initiative du PG (photo, vidéo ou autre)>]"
+    )
+    st.sidebar.write(":blue[<contact via API LinkedIn>]")
+    st.sidebar.caption(
+        "Connexion LinkedIn requise : vous choisissez d’autoriser ou non GorgsGPT à accéder aux infos publiques de votre profil."
+    )
 
 strass = st.sidebar.selectbox(
     "Choisis une Strass",
-    (
-        "Strass Academy",
-        "...",
-    ),
+    ("[Strass]", "exemple: Strass Academy"),
 )
 
-if strass == "Strass Academy":
+if strass.endswith("Strass Academy"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
-    st.sidebar.write(":green[photo et/ou video YouTube]")
-
+    st.sidebar.write(":green[<contenu optionnel à l'initiative de la strass>]")
+    st.sidebar.caption("soumis à l'acceptation préalable des co-strass concernés")
 
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
