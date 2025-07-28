@@ -206,7 +206,7 @@ st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="J'entrave que dalle à cette appli, explique-moi comment ça fonctionne stp !",
+    value="J'entrave que dalle à cette appli, explique-moi comment ça fonctionne stp 🤗",
     key="french",
 )
 
@@ -258,7 +258,7 @@ st.subheader(":violet[🚧 Argad'z to French 🚧]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's, bord's ! Le Gorg's a la méga gerbe, y a keud's de Fratern's dans ce Tabagn's",
+    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 ... Et on se sacque au fond du Tabagn's !",
     key="argadz",
 )
 
