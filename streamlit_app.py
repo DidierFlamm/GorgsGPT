@@ -76,7 +76,28 @@ st.sidebar.subheader(
     f"{tabagns.split(" ")[0]} {anns}", divider=True
 )  ########################
 
-st.sidebar.write(":green[photo et/ou video YouTube]")
+
+vimeo_embed = """
+<iframe src="https://player.vimeo.com/video/1097107734?h=40d724f3ee" 
+    width="100%" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+</iframe>
+"""
+
+
+with st.sidebar:
+    components.html(vimeo_embed, height=180)
+
+with st.sidebar:
+    col1, col2 = st.columns([1, 2])  # 2 colonnes, col2 plus large
+
+    with col1:
+        st.image(
+            "https://i.vimeocdn.com/portrait/115967603_72x72", use_container_width=True
+        )
+
+    with col2:
+        st.write("© 2025 Claire Barrin")
+
 
 pg = st.sidebar.selectbox(
     "Choisis un PG",
@@ -151,7 +172,12 @@ st.sidebar.markdown(
 
 st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
 
-st.sidebar.link_button("👉 Wikipedia", "https://fr.wikipedia.org/wiki/Gadzarts")
+st.sidebar.link_button(
+    "Wikipedia",
+    "https://fr.wikipedia.org/wiki/Gadzarts",
+    icon="👉",
+    use_container_width=True,
+)
 
 st.sidebar.subheader(
     "👀 App's de K'PTN' 42", divider=True
