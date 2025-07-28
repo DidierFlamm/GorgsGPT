@@ -198,6 +198,8 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.caption("© Didier FLAMM")
+
 st.sidebar.divider()
 
 st.sidebar.image(
