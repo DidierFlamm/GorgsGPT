@@ -57,19 +57,22 @@ def st_norms(text: str, size: str = "2em"):
 st.sidebar.subheader(":green[Prom's]", divider=True)  ########################
 
 tabagns = st.sidebar.selectbox(
-    "Choisis un Tabagn's",
+    "Choisis un Tabagn's:",
     (
         "KIN (Aix-en-Provence)",
         "Boquette (Angers)",
         "Bordel's (Bordeaux)",
         "Châlon's (Châlons-en-Champagne)",
         "Clun's (Cluny)",
+        "Karlsberg's (Karlsruhe)",
         "Bir's (Lille)",
         "Cyber's (Metz)",
     ),
 )
 
-anns = st.sidebar.select_slider("Choisis une Ann's", options=range(150, 226), value=201)
+anns = st.sidebar.select_slider(
+    "Choisis une Ann's:", options=range(150, 226), value=201
+)
 
 
 st.sidebar.subheader(
@@ -102,7 +105,7 @@ with st.sidebar:
 
 
 pg = st.sidebar.selectbox(
-    "Choisis un PG",
+    "Choisis un PG:",
     (
         "[Bucque] [Fam's]",
         "exemple: Road 999",
@@ -142,7 +145,7 @@ else:
     )
 
 strass = st.sidebar.selectbox(
-    "Choisis une Strass",
+    "Choisis une Strass:",
     ("[Strass]", "exemple: Strass Academy"),
 )
 
@@ -244,18 +247,56 @@ st.sidebar.subheader(
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
-    caption="Image par Guiral LACOTTE",
+    caption="© 2006 Guiral LACOTTE",
 )
 
+st.sidebar.markdown(
+    """
+    <p style="text-align:center; font-size:0.8em; color:gray;">
+    Image digitalisée, nettoyée et vectorialisée par l'utilisateur
+    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">Beretta_vexee</a> 👀
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.divider()
+
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">👉 
+    <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact" target="_blank">Wikipedia: Contact</a>
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">👉 
+    <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Wikimedia: Privacy Policy</a>
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
 ###############################################################################################################
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
+
+st.markdown(
+    """
+    <h1 style="text-align:center;">
+        Connecting Gadzarts
+    </h1>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.divider()
 
 st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu d'essayer de nous troller stp 🤗",
+    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu de nous prendre la tête stp 🤗",
     key="french",
 )
 
@@ -359,7 +400,7 @@ st.text_area("coming soon...", disabled=True)
 
 st.divider()  ############################################################################################
 
-st.subheader(":violet[Vocab's]")
+st.subheader(":violet[🚨 Vocab's]")
 
 with st.expander("📖 Afficher le dictionnaire Argad'z"):
     st.write("🚧 👷 🚧")
@@ -368,9 +409,10 @@ st.divider()
 
 st.markdown(
     """
-    <div style='text-align: center; font-size: small; color: gray;'>
+    <div style='text-align: center; font-size: 0.8em; color: gray;'>
     🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
-    🤗 GorgsGPT est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank" style="color:gray; text-decoration:none;">Hugging Face</a>.<br>
+    🤗 GorgsGPT est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
+    ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf mention contraire.<br>
     © 2026 KIN 201 🫶
     </div>
     """,
