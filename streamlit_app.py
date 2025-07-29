@@ -413,7 +413,7 @@ st.markdown(
     🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
     🤗 GorgsGPT est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
     ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf mention contraire.<br>
-    © 2026 KIN 201 🫶
+    © 2026 KIN 201<br>🫶
     </div>
     """,
     unsafe_allow_html=True,
