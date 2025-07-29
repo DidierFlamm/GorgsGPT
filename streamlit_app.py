@@ -395,7 +395,7 @@ FR Le carnet traditionnel de David l'énervé est très validable."""
                 st.write("🥹")
             else:
                 st.text_input(
-                    "Offer a better translation template t if you can",
+                    "Offer a better translation template if you can",
                     "Your translation template",
                     key="input_1",
                 )
