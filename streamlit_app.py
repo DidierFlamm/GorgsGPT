@@ -552,7 +552,18 @@ AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'
 
     with st.expander("📖 Afficher le dictionnaire Argad'z"):
         st.write("🚧 👷 🚧")
-
+        st.image(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
+        )
+        st.markdown(
+            """
+        <div style='text-align: center; font-size: 0.8em; color: gray;'>
+        © 218 <a href="https://commons.wikimedia.org/wiki/User:Jean_GUERIN_2" target="_blank">Jean GUERIN 2</a> 
+        
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
 
 st.divider()
 
