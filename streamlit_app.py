@@ -463,7 +463,7 @@ with col2:
 
 st.divider()  ########################################################################################
 
-st.subheader(":violet[🚧 GorgsGPT 🚧]")
+st.subheader(":green[✅ GorgsGPT]")
 st.text_area("coming soon...", disabled=True)
 
 st.divider()  ############################################################################################
