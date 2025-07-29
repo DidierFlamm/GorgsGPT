@@ -72,7 +72,7 @@ tabagns = st.sidebar.selectbox(
 )
 
 anns = st.sidebar.select_slider(
-    "Choisis une Ann's:", options=range(-120, 226), value=201
+    "Choisis une Ann's:", options=range(-20, 226), value=201
 )
 
 
