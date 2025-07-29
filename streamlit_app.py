@@ -133,7 +133,7 @@ else:
         ":green[1. contenu personnel à l'initiative de chaque PG (optionnel)]"
     )
 
-    uploaded_file = st.sidebar.file_uploader("Choisis un fichier:")
+    uploaded_file = st.sidebar.file_uploader("Choisis un fichier:", key="pg")
     if uploaded_file is not None:
         st.sidebar.info(
             "Merci d'avoir testé mais pour l'instant ça ne fonctionne pas désolé.",
@@ -177,9 +177,10 @@ else:
     st.sidebar.write(
         ":orange[4. contenu artistique à l'initiative de chaque strass (optionnel)]"
     )
-    st.sidebar.caption(
-        "⚠️ Soumis à la valid's 🤙 préalable de l'ensemble des co-strass."
-    )
+
+    st.sidebar.file_uploader("Choisis un fichier:", disabled=True, key="strass")
+
+    st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
 
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
@@ -208,12 +209,18 @@ st.sidebar.markdown(
 )
 
 st.sidebar.subheader(
-    ":green[🫦 GorgsGPT sur WhatsApp]", divider=True
+    ":green[🥸 GorgsGPT sur WhatsApp]", divider=True
 )  ########################################
 
-st.sidebar.write(
-    ":green[Tu savais que le Gorg's était encore sur WhatsApp en 2026 ? 🥸]"
+st.sidebar.write(":green[Tu savais que le Gorg's était encore sur WhatsApp en 2026 ?]")
+
+st.sidebar.link_button(
+    "Rejoindre WhatsApp",
+    "https://social.mtdv.me/GorgsGPT",
+    icon="💬",
+    use_container_width=True,
 )
+
 
 st.sidebar.subheader(
     ":orange[🤝 Site de la Soce]", divider=True
@@ -317,16 +324,20 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.divider()
+
 st.sidebar.link_button(
-    "Créer un compte GorgsGPT",
+    "Créer un compte",
     "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
     use_container_width=True,
+    icon="🔑",
 )
 
 st.sidebar.link_button(
     "Lar's important",
     "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
     use_container_width=True,
+    icon="‼️",
 )
 
 
