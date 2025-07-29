@@ -223,18 +223,16 @@ st.sidebar.markdown(
 )
 
 st.sidebar.subheader(
-    "💲 Keud's de Fratern's", divider=True
+    ":green[💲 Keud's de Fratern's]", divider=True
 )  ########################################
 
 ad = st.sidebar.toggle("Votre pub ici pour...")
 
 if ad:
-    st.sidebar.write("rien au monde ! 💸")
-
-st.sidebar.divider()
+    st.sidebar.write(":green[rien au monde ! 💸]")
 
 st.sidebar.subheader(
-    "💜 Fratern's", divider=True
+    ":violet[💜 Fratern's]", divider=True
 )  ########################################
 
 st.sidebar.image(
