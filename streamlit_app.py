@@ -126,7 +126,7 @@ else:
         ":green[1. contenu personnel à l'initiative de chaque PG (optionnel)]"
     )
 
-    uploaded_file = st.sidebar.file_uploader("Choisis un fichier")
+    uploaded_file = st.sidebar.file_uploader("Choisis un fichier:")
     if uploaded_file is not None:
         st.sidebar.info(
             "Merci d'avoir testé mais pour l'instant ça ne fonctionne pas désolé.",
