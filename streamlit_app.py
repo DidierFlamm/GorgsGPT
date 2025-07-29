@@ -183,6 +183,11 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.subheader(
+    ":green[🫦 GorgsGPT sur WhatsApp]", divider=True
+)  ########################################
+
+st.sidebar.write(":green[Tu savais que le Gorg's était encore sur WhatsApp en 2025 ?]")
 
 st.sidebar.subheader(
     ":orange[🤝 Site de la Soce]", divider=True
