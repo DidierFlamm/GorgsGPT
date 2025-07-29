@@ -389,14 +389,15 @@ else:
 FR Le carnet traditionnel de David l'énervé est très validable."""
         )
 
+        st.write("Evaluate this 1st random template:")
         selected_1 = st.feedback("thumbs", key="f1")
         if selected_1 is not None:
             if selected_1 == 1:
                 st.write("🥹")
             else:
                 st.text_input(
-                    "Offer a better translation template if you can",
-                    "Your translation template",
+                    "Offer a better translation template if you can...",
+                    "Your translation suggestion",
                     key="input_1",
                 )
 
@@ -406,7 +407,7 @@ FR Le carnet traditionnel de David l'énervé est très validable."""
             """EN The head of engineering school Arts & Métiers teaches solidarity through student hazing.
 AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'z."""
         )
-
+        st.write("Evaluate this 2nd random template:")
         selected_2 = st.feedback("thumbs", key="f2")
 
         if selected_2 is not None:
@@ -414,8 +415,8 @@ AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'
                 st.write("🥹")
             else:
                 st.text_input(
-                    "Offer a better translation template if you can",
-                    "Your translation template",
+                    "Offer a better translation template if you can...",
+                    "Your translation suggestion",
                     key="input_2",
                 )
 
