@@ -92,7 +92,9 @@ with st.sidebar:
 
     with col1:
         st.image(
-            "https://i.vimeocdn.com/portrait/115967603_72x72", use_container_width=True
+            "https://i.vimeocdn.com/portrait/115967603_72x72",
+            use_container_width=True,
+            caption="auteur.e",
         )
 
     with col2:
@@ -114,15 +116,21 @@ if pg.endswith(str(999)):
 else:
 
     st.sidebar.caption(
-        "⚠️ En respect des obligations RGPD et du droit à la vie privée (Code civil, article 9), la liste sera limitée aux Bucques + Fam’s."
+        "⚠️ En respect des obligations RGPD et du droit à la vie privée (Code civil, article 9), la liste sera limitée aux Bucques + Fam’s de chaque PG."
     )
 
     st.sidebar.write(
-        ":green[<contenu optionnel à l'initiative du PG (photo, vidéo ou autre)>]"
+        ":green[1. contenu personnel à l'initiative de chaque PG (optionnel)]"
     )
-    st.sidebar.write(":blue[<contact via API LinkedIn>]")
+    st.sidebar.write(":violet[2. 📧 <fams><tabagns><anns>@gadz.org]")
+
     st.sidebar.caption(
-        "Connexion LinkedIn requise : vous choisissez d’autoriser ou non GorgsGPT à accéder aux infos publiques de votre profil."
+        "⚠️ L'adresse mail @gadz.org sera générée automatiquement par l'appli sans être stockée nulle part pour éviter toute fuite de données."
+    )
+
+    st.sidebar.write(":blue[3. infos pro via API LinkedIn]")
+    st.sidebar.caption(
+        "⚠️ Connexion LinkedIn requise : vous choisissez d’autoriser ou non GorgsGPT à accéder aux infos publiques de votre profil LinkedIn."
     )
 
 strass = st.sidebar.selectbox(
@@ -134,8 +142,12 @@ if strass.endswith("Strass Academy"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 else:
-    st.sidebar.write(":green[<contenu optionnel à l'initiative de la strass>]")
-    st.sidebar.caption("soumis à l'acceptation préalable des co-strass")
+    st.sidebar.write(
+        ":orange[4. contenu artistique à l'initiative de chaque strass (optionnel)]"
+    )
+    st.sidebar.caption(
+        "⚠️ Soumis à la valid's 🤙 préalable par l'ensemble des co-strass."
+    )
 
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
