@@ -250,7 +250,7 @@ st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="J'entrave que dalle à cette appli, y a rien qui fonctionne ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu d'essayer de nous troller stp 🤗",
+    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu d'essayer de nous troller stp 🤗",
     key="french",
 )
 
