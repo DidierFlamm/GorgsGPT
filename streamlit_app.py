@@ -94,7 +94,7 @@ with st.sidebar:
         st.image(
             "https://i.vimeocdn.com/portrait/115967603_72x72",
             use_container_width=True,
-            caption="auteur.e",
+            caption="portrait de l'auteur.e (en option)",
         )
 
     with col2:
