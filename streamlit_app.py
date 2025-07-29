@@ -209,18 +209,17 @@ st.sidebar.markdown(
 )
 
 st.sidebar.subheader(
-    ":green[🥸 GorgsGPT sur WhatsApp]", divider=True
+    ":green[💬 GorgsGPT sur WhatsApp]", divider=True
 )  ########################################
 
-st.sidebar.write(":green[Tu savais que le Gorg's était encore sur WhatsApp en 2026 ?]")
-
-st.sidebar.link_button(
-    "Rejoindre WhatsApp",
-    "https://social.mtdv.me/GorgsGPT",
-    icon="💬",
-    use_container_width=True,
+st.sidebar.markdown(
+    """
+    <a href="https://social.mtdv.me/GorgsGPT" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/WA.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
 )
-
 
 st.sidebar.subheader(
     ":orange[🤝 Site de la Soce]", divider=True
