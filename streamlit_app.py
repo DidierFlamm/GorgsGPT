@@ -261,7 +261,7 @@ st.sidebar.markdown(
 
 
 st.sidebar.subheader(
-    ":blue[🌊 App's de K'PTN' 42 👀]", divider=True
+    ":blue[🌊 App's de K'PTN' 42 🏄‍♂️]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
