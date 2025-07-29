@@ -418,3 +418,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+if "balloons" not in st.session_state:
+    st.balloons()
+    st.session_state.balloons = True
