@@ -122,6 +122,14 @@ else:
     st.sidebar.write(
         ":green[1. contenu personnel à l'initiative de chaque PG (optionnel)]"
     )
+
+    uploaded_file = st.sidebar.file_uploader("Choisis un fichier")
+    if uploaded_file is not None:
+        st.sidebar.info(
+            "Merci d'avoir testé mais pour l'instant ça ne fonctionne pas désolé.",
+            icon="😅",
+        )
+
     st.sidebar.write(":violet[2. 📧 <fams><tabagns><anns>@gadz.org]")
 
     st.sidebar.caption(
@@ -198,7 +206,7 @@ st.sidebar.link_button(
 )
 
 st.sidebar.subheader(
-    "👀 App's de K'PTN' 42", divider=True
+    "🌊 App's de K'PTN' 42 👀", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -214,8 +222,20 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.subheader(
+    "💲 Keud's de Fratern's", divider=True
+)  ########################################
+
+ad = st.sidebar.toggle("Votre pub ici pour...")
+
+if ad:
+    st.sidebar.write("rien au monde ! 💸")
 
 st.sidebar.divider()
+
+st.sidebar.subheader(
+    "💜 Fratern's", divider=True
+)  ########################################
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
@@ -230,7 +250,7 @@ st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="J'entrave que dalle à cette appli, explique-moi comment ça fonctionne stp 🤗",
+    value="J'entrave que dalle à cette appli, y a rien qui fonctionne ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu d'essayer de nous troller stp 🤗",
     key="french",
 )
 
@@ -282,7 +302,7 @@ st.subheader(":violet[🚧 Argad'z to French 🚧]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 ... Et on se sacque au fond du Tabagn's !",
+    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 alors on se sacque au fond du Tabagn's... mon 😤",
     key="argadz",
 )
 
