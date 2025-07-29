@@ -55,7 +55,7 @@ def st_norms(text: str, size: str = "2em"):
     st.markdown(html, unsafe_allow_html=True)
 
 
-st.sidebar.subheader(":green[Prom's]", divider=True)  ########################
+st.sidebar.subheader(":green[N² Prom's]", divider=True)  ########################
 
 tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's:",
@@ -65,14 +65,14 @@ tabagns = st.sidebar.selectbox(
         "Bordel's (Bordeaux)",
         "Châlon's (Châlons-en-Champagne)",
         "Clun's (Cluny)",
-        "Karlsberg's (Karlsruhe)",
+        "Karlsberg's ❔ (Karlsruhe)",
         "Bir's (Lille)",
         "Cyber's (Metz)",
     ),
 )
 
 anns = st.sidebar.select_slider(
-    "Choisis une Ann's:", options=range(150, 226), value=201
+    "Choisis une Ann's:", options=range(-120, 226), value=201
 )
 
 
@@ -102,21 +102,27 @@ with st.sidebar:
         )
 
     with col2:
-        st.write("© 2025 Claire Barrin")
+        st.write("© 225 Claire Barrin")
 
+st.sidebar.divider()
 
 pg = st.sidebar.selectbox(
     "Choisis un PG:",
     (
         "[Bucque] [Fam's]",
-        "exemple: Road 999",
+        "exemple: Road 9️⃣9️⃣9️⃣",
     ),
 )
 
 
-if pg.endswith(str(999)):
+if pg.endswith("9️⃣9️⃣9️⃣"):
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.sidebar.video(video_url, autoplay=False, muted=False)
+    st.sidebar.link_button(
+        "Envoyer un 📧 au phi's",
+        f"mailto:999{tabagns.split(" ")[0]}{anns}@gadz.org",
+        use_container_width=True,
+    )
 else:
 
     st.sidebar.caption(
@@ -136,6 +142,12 @@ else:
 
     st.sidebar.write(":violet[2. 📧 <fams><tabagns><anns>@gadz.org]")
 
+    st.sidebar.link_button(
+        "Envoyer un 📧 au phi's",
+        f"mailto:'fams''tabagns''anns'@gadz.org",
+        use_container_width=True,
+    )
+
     st.sidebar.caption(
         "⚠️ L'adresse mail @gadz.org sera générée automatiquement par l'appli sans être stockée nulle part pour éviter toute fuite de données."
     )
@@ -144,6 +156,14 @@ else:
     st.sidebar.caption(
         "⚠️ Connexion LinkedIn requise : vous choisissez d’autoriser ou non GorgsGPT à accéder aux infos publiques de votre profil LinkedIn."
     )
+
+    st.sidebar.link_button(
+        "🏡 Se connecter à LinkedIn",
+        "https://www.linkedin.com/groups/13343076/",
+        use_container_width=True,
+    )
+
+st.sidebar.divider()
 
 strass = st.sidebar.selectbox(
     "Choisis une Strass:",
@@ -158,7 +178,7 @@ else:
         ":orange[4. contenu artistique à l'initiative de chaque strass (optionnel)]"
     )
     st.sidebar.caption(
-        "⚠️ Soumis à la valid's 🤙 préalable par l'ensemble des co-strass."
+        "⚠️ Soumis à la valid's 🤙 préalable de l'ensemble des co-strass."
     )
 
 st.sidebar.subheader(
@@ -192,7 +212,7 @@ st.sidebar.subheader(
 )  ########################################
 
 st.sidebar.write(
-    ":green[Tu savais que le Gorg's était encore sur WhatsApp en 2025 ? 🥸]"
+    ":green[Tu savais que le Gorg's était encore sur WhatsApp en 2026 ? 🥸]"
 )
 
 st.sidebar.subheader(
@@ -217,7 +237,24 @@ st.sidebar.link_button(
 )
 
 st.sidebar.subheader(
-    "🌊 App's de K'PTN' 42 👀", divider=True
+    ":violet[🪇 Strass de l'Em's]", divider=True
+)  ########################################
+
+
+st.sidebar.write("🎛️ Chants Trad's randomizés:")
+
+video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+st.sidebar.subheader(
+    ":blue[🌊 App's de K'PTN' 42 👀]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -233,6 +270,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+
 st.sidebar.subheader(
     ":green[💲 Keud's de Fratern's]", divider=True
 )  ########################################
@@ -243,28 +281,12 @@ if ad:
     st.sidebar.write(":green[rien au monde ! 💸]")
 
 st.sidebar.subheader(
-    ":orange[🪇 Le Pian's de l'Em's]", divider=True
-)  ########################################
-
-
-st.sidebar.write("Chants randomizés:")
-
-video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox</p>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.sidebar.subheader(
     ":violet[💜 Fratern's]", divider=True
 )  ########################################
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
-    caption="© 2006 Guiral LACOTTE",
+    caption="© 206 Guiral LACOTTE",
 )
 
 st.sidebar.markdown(
@@ -294,6 +316,20 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+st.sidebar.link_button(
+    "Créer un compte GorgsGPT",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
+    use_container_width=True,
+)
+
+st.sidebar.link_button(
+    "Lar's important",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
+    use_container_width=True,
+)
+
+
 ###############################################################################################################
 
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
@@ -311,18 +347,27 @@ st.divider()
 
 on = st.toggle("I consent to anonymously submitting a template to train GorgsGPT.")
 
-if on:
+st.divider()
+
+if not on:
+
+    st.image(
+        "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/M.ENSAM.H.A.png",
+        caption="© 226 GorgsGPT",
+    )
+
+else:
 
     st.segmented_control(
-        "Source language",
-        ["Argad'Z", "FRench", "ENglish", "AUto-detect"],
+        "🫗 Source language",
+        ["🏳️ Argad'Z", "🇫🇷 FRench", "🇬🇧 ENglish", "🏳️‍🌈 AUto-detect"],
         key="departure",
         selection_mode="single",
     )
 
     st.segmented_control(
-        "Target language",
-        ["Argad'Z", "FRench", "ENglish", "AUto-detect"],
+        "🎯 Target language",
+        ["🏁 Argad'Z", "🇫🇷 FRench", "🇬🇧 ENglish", "🏳️‍🌈 AUto-detect"],
         key="arrival",
         selection_mode="single",
     )
@@ -330,14 +375,40 @@ if on:
     with st.expander("View 'Pierre de Rosette' random samples"):
         st.code(
             """AZ Le carn's des trad's du vénérable Dav's est lar's étal's.  
-FR Le carnet traditionnel de David l'énervé est très validé."""
+FR Le carnet traditionnel de David l'énervé est très validable."""
         )
+
+        selected_1 = st.feedback("thumbs", key="f1")
+        if selected_1 is not None:
+            if selected_1 == 1:
+                st.write("🥹")
+            else:
+                st.text_input(
+                    "Offer a better translation template t if you can",
+                    "Your translation template",
+                    key="input_1",
+                )
+
+        st.divider()
+
         st.code(
             """EN The head of engineering school Arts & Métiers teaches solidarity through student hazing.
 AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'z."""
         )
 
-    st.write("Scan your translation template")
+        selected_2 = st.feedback("thumbs", key="f2")
+
+        if selected_2 is not None:
+            if selected_2 == 1:
+                st.write("🥹")
+            else:
+                st.text_input(
+                    "Offer a better translation template if you can",
+                    "Your translation template",
+                    key="input_2",
+                )
+
+    st.write("Scan a new personal translation template:")
 
     enable = st.checkbox("Enable camera")
     picture = st.camera_input("Scan your translation template", disabled=not enable)
@@ -346,132 +417,130 @@ AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'
 
         st.error(
             """Unable to detect Source language and/or Target language.  
-            Please press Rerun or ✖️ Clear Photo to scan a new template.""",
+            Please press ⏳ Rerun to give it a deeper look or ✖️ Clear Photo to scan a new template.""",
             icon="⁉️",
         )
-        if st.button("Rerun"):
+        if st.button("⏳ Rerun"):
             with st.spinner("Wait for it...", show_time=True):
                 time.sleep(5)
             st.warning(
-                """Oops! A translation error was detected. Please review your template and try again.""",
+                """Oops! A translation error was detected in your template. Please review it and try again later.""",
                 icon="😬",
             )
 
+    st.divider()
 
-st.divider()
+    st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
-st.subheader(":violet[🚧 French to Argad'z 🚧]")
-
-french = st.text_input(
-    "Prompt en Français",
-    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu de nous prendre la tête, stp 🤗",
-    key="french",
-)
-
-to_argadz = french  #####################
-
-st_gothic("💬 " + to_argadz)
-
-script = f"""
-<script>
-    var msgARGADZ = new SpeechSynthesisUtterance({to_argadz!r});
-    msgARGADZ.lang = 'FR-fr';
-    msgARGADZ.rate = 1.1;
-
-    var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
-    msgARGADZ.lang = 'FR-fr';
-    msgARGADZ.rate = 1.1;
-
-
-    function speak() {{
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(msgARGADZ);
-        
-    }}
-
-    function stop() {{
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(msgSTOP)
-    }}
-</script>
-"""
-
-(col1, col2, *_) = st.columns(4, vertical_alignment="center")
-
-with col1:
-    components.html(
-        script + """<button onclick="speak()">🗣️<br>Affole les Watts !</button>""",
-        height=45,
+    french = st.text_input(
+        "Prompt en Français",
+        value="J'entrave que dalle à cette pseudo app, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu de nous prendre la tête, stp 🤗",
+        key="french",
     )
 
-with col2:
-    components.html(
-        script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
-        height=45,
+    to_argadz = french  #####################
+
+    st_gothic("💬 " + to_argadz)
+
+    script = f"""
+    <script>
+        var msgARGADZ = new SpeechSynthesisUtterance({to_argadz!r});
+        msgARGADZ.lang = 'FR-fr';
+        msgARGADZ.rate = 1.1;
+
+        var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
+        msgARGADZ.lang = 'FR-fr';
+        msgARGADZ.rate = 1.1;
+
+
+        function speak() {{
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(msgARGADZ);
+            
+        }}
+
+        function stop() {{
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(msgSTOP)
+        }}
+    </script>
+    """
+
+    (col1, col2, *_) = st.columns(4, vertical_alignment="center")
+
+    with col1:
+        components.html(
+            script + """<button onclick="speak()">🗣️<br>Affole les Watts !</button>""",
+            height=45,
+        )
+
+    with col2:
+        components.html(
+            script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
+            height=45,
+        )
+
+    st.divider()  ########################################################################################
+
+    st.subheader(":violet[🚧 Argad'z to French 🚧]")
+
+    argadz = st.text_input(
+        "Prompt en Argad'z",
+        value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 alors on se sacque au fond du Tabagn's... mon 😤 !",
+        key="argadz",
     )
 
-st.divider()  ########################################################################################
+    to_french = argadz  #######################
 
-st.subheader(":violet[🚧 Argad'z to French 🚧]")
+    st_norms("💬 " + to_french)
 
-argadz = st.text_input(
-    "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 alors on se sacque au fond du Tabagn's... mon 😤 !",
-    key="argadz",
-)
+    script = f"""
+    <script>
+        var msgFRENCH = new SpeechSynthesisUtterance({to_french!r});
+        msgFRENCH.lang = 'FR-fr';
+        msgFRENCH.rate = 1.1;
 
+        var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
+        msgARGADZ.lang = 'FR-fr';
+        msgARGADZ.rate = 1.1;
 
-to_french = argadz  #######################
+        function speak() {{
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(msgFRENCH);
+        }}
 
-st_norms("💬 " + to_french)
+        function stop() {{
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(msgSTOP)
+        }}
+    </script>
+    """
 
-script = f"""
-<script>
-    var msgFRENCH = new SpeechSynthesisUtterance({to_french!r});
-    msgFRENCH.lang = 'FR-fr';
-    msgFRENCH.rate = 1.1;
+    (col1, col2, *_) = st.columns(4, vertical_alignment="center")
 
-    var msgSTOP = new SpeechSynthesisUtterance("Sacque toï !");
-    msgARGADZ.lang = 'FR-fr';
-    msgARGADZ.rate = 1.1;
+    with col1:
+        components.html(
+            script + """<button onclick="speak()">🗣️<br>Keud's de Watts !</button>""",
+            height=45,
+        )
 
-    function speak() {{
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(msgFRENCH);
-    }}
+    with col2:
+        components.html(
+            script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
+            height=45,
+        )
 
-    function stop() {{
-        window.speechSynthesis.cancel();
-        window.speechSynthesis.speak(msgSTOP)
-    }}
-</script>
-"""
+    st.divider()  ########################################################################################
 
-(col1, col2, *_) = st.columns(4, vertical_alignment="center")
+    st.subheader(":green[✅ GorgsGPT]")
+    st.text_area("coming soon...", disabled=True)
 
-with col1:
-    components.html(
-        script + """<button onclick="speak()">🗣️<br>Keud's de Watts !</button>""",
-        height=45,
-    )
+    st.divider()  ############################################################################################
 
-with col2:
-    components.html(
-        script + """<button onclick="stop()">🔇<br>Sacque toï !</button>""",
-        height=45,
-    )
+    st.subheader(":violet[🚨 Vocab's]")
 
-st.divider()  ########################################################################################
-
-st.subheader(":green[✅ GorgsGPT]")
-st.text_area("coming soon...", disabled=True)
-
-st.divider()  ############################################################################################
-
-st.subheader(":violet[🚨 Vocab's]")
-
-with st.expander("📖 Afficher le dictionnaire Argad'z"):
-    st.write("🚧 👷 🚧")
+    with st.expander("📖 Afficher le dictionnaire Argad'z"):
+        st.write("🚧 👷 🚧")
 
 
 st.divider()
@@ -479,15 +548,17 @@ st.divider()
 st.subheader(":blue[💙 Rate this app's]")
 
 sentiment_mapping = [
-    "GorgsGPT a la méga gerbe !",
+    "L'app's foüt la méga gerbe au phi's !",
     "Keud's de fratern's pour l'app's !",
-    "Fay's pour GorgsGPT",
+    "C'est trop fay's pour GorgsGPT",
     "Bel eff's du phi's à l'app's !",
-    "Phi's HM lar's GorgsGPT !",
+    "Le phi's HM lar's l'app's !",
 ]
 selected = st.feedback("stars")
 if selected is not None:
     st.markdown(f"{sentiment_mapping[selected]}")
+if selected == 4:
+    st.balloons()
 
 st.divider()
 
@@ -495,9 +566,9 @@ st.markdown(
     """
     <div style='text-align: center; font-size: 0.8em; color: gray;'>
     🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
-    🤗 GorgsGPT est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
-    ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf mention contraire.<br>
-    © 2026 KIN 201<br>🫶
+    🤗 <a href="https://GorgsGPT.com/" target="_blank">GorgsGPT</a> est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
+    ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
+    © 226 KIN 201<br>🫶
     </div>
     """,
     unsafe_allow_html=True,
