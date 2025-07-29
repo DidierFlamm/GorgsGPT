@@ -428,7 +428,7 @@ AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'
 
         st.error(
             """Unable to detect Source language and/or Target language.  
-            Please press ⏳ Rerun to give it a deeper look or ✖️ Clear Photo to scan a new template.""",
+            Please press ⏳ Rerun bellow to give it a deeper look or ✖️ Clear Photo above to scan a new template.""",
             icon="⁉️",
         )
         if st.button("⏳ Rerun"):
