@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import streamlit as st
 import streamlit.components.v1 as components
+import time
 
 # set_page_config() can only be called once per app page, and must be called as the first Streamlit command in your script.
 
@@ -242,6 +243,22 @@ if ad:
     st.sidebar.write(":green[rien au monde ! 💸]")
 
 st.sidebar.subheader(
+    ":orange[🪇 Le Pian's de l'Em's]", divider=True
+)  ########################################
+
+
+st.sidebar.write("Chants randomizés:")
+
+video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(
     ":violet[💜 Fratern's]", divider=True
 )  ########################################
 
@@ -292,11 +309,62 @@ st.markdown(
 
 st.divider()
 
+on = st.toggle("I consent to anonymously submitting a template to train GorgsGPT.")
+
+if on:
+
+    st.segmented_control(
+        "Source language",
+        ["Argad'Z", "FRench", "ENglish", "AUto-detect"],
+        key="departure",
+        selection_mode="single",
+    )
+
+    st.segmented_control(
+        "Target language",
+        ["Argad'Z", "FRench", "ENglish", "AUto-detect"],
+        key="arrival",
+        selection_mode="single",
+    )
+
+    with st.expander("View 'Pierre de Rosette' random samples"):
+        st.code(
+            """AZ Le carn's des trad's du vénérable Dav's est lar's étal's.  
+FR Le carnet traditionnel de David l'énervé est très validé."""
+        )
+        st.code(
+            """EN The head of engineering school Arts & Métiers teaches solidarity through student hazing.
+AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'z."""
+        )
+
+    st.write("Scan your translation template")
+
+    enable = st.checkbox("Enable camera")
+    picture = st.camera_input("Scan your translation template", disabled=not enable)
+
+    if picture:
+
+        st.error(
+            """Unable to detect Source language and/or Target language.  
+            Please press Rerun or ✖️ Clear Photo to scan a new template.""",
+            icon="⁉️",
+        )
+        if st.button("Rerun"):
+            with st.spinner("Wait for it...", show_time=True):
+                time.sleep(5)
+            st.warning(
+                """Oops! A translation error was detected. Please review your template and try again.""",
+                icon="😬",
+            )
+
+
+st.divider()
+
 st.subheader(":violet[🚧 French to Argad'z 🚧]")
 
 french = st.text_input(
     "Prompt en Français",
-    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu de nous prendre la tête stp 🤗",
+    value="J'entrave que dalle à cette appli, y a rien qui marche ou quoi ? Explique-moi comment ça fonctionne ton truc au lieu de nous prendre la tête, stp 🤗",
     key="french",
 )
 
@@ -348,7 +416,7 @@ st.subheader(":violet[🚧 Argad'z to French 🚧]")
 
 argadz = st.text_input(
     "Prompt en Argad'z",
-    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 alors on se sacque au fond du Tabagn's... mon 😤",
+    value="Il est pas norm's ton Num's, bord's ! Le Gorg's est très 😡 alors on se sacque au fond du Tabagn's... mon 😤 !",
     key="argadz",
 )
 
@@ -404,6 +472,22 @@ st.subheader(":violet[🚨 Vocab's]")
 
 with st.expander("📖 Afficher le dictionnaire Argad'z"):
     st.write("🚧 👷 🚧")
+
+
+st.divider()
+
+st.subheader(":blue[💙 Rate this app's]")
+
+sentiment_mapping = [
+    "GorgsGPT a la méga gerbe !",
+    "Keud's de fratern's pour l'app's !",
+    "Fay's pour GorgsGPT",
+    "Bel eff's du phi's à l'app's !",
+    "Phi's HM lar's GorgsGPT !",
+]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"{sentiment_mapping[selected]}")
 
 st.divider()
 
