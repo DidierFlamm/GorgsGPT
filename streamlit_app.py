@@ -163,31 +163,12 @@ else:
         use_container_width=True,
     )
 
-st.sidebar.divider()
-
-strass = st.sidebar.selectbox(
-    "Choisis une Strass:",
-    ("[Strass]", "exemple: Strass Academy"),
-)
-
-if strass.endswith("Strass Academy"):
-    video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
-    st.sidebar.video(video_url, autoplay=False, muted=False)
-else:
-    st.sidebar.write(
-        ":orange[4. contenu artistique à l'initiative de chaque strass (optionnel)]"
-    )
-
-    st.sidebar.file_uploader("Choisis un fichier:", disabled=True, key="strass")
-
-    st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
-
 st.sidebar.subheader(
-    ":violet[🎛️ Strass de l'Em's]", divider=True
+    ":violet[🎛️ YouGorgs Premium]", divider=True
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre gratuitement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) et avec votre écran de mobile verrouillé 🙊"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec votre mobile verrouillé 🙊"
 )
 
 video_url = "https://www.youtube.com/watch?v=Rts_R1cx6oE"
@@ -214,6 +195,8 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.write("Visionne ta videal Trad's")
+
 
 video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
 st.sidebar.video(video_url, autoplay=False, muted=False)
@@ -221,6 +204,21 @@ st.sidebar.markdown(
     """<p style="text-align:center; font-size:0.8em; color:gray;">© Cl 219</p>
     """,
     unsafe_allow_html=True,
+)
+
+st.sidebar.divider()
+
+st.sidebar.file_uploader("Upload ta videal:", disabled=True, key="strass")
+st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
+
+st.sidebar.divider()
+
+st.sidebar.write(
+    "⚠️ En attendant la valid's de tes co-strass, tu peux visionner ta videal Trad's en collant le lien YouTube ci-dessous:"
+)
+
+yt = st.sidebar.text_input(
+    "Lien YouTube:",
 )
 
 st.sidebar.subheader(
@@ -363,10 +361,12 @@ st.sidebar.subheader(
 video_url = "https://www.youtube.com/watch?v=k8ytZ_Zcius"
 st.sidebar.video(video_url, autoplay=False, muted=False)
 st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Syrine Kaouane</p>
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 2022 Syrine Kaouane @ Bo 221</p>
     """,
     unsafe_allow_html=True,
 )
+
+st.sidebar.divider()
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
@@ -376,8 +376,8 @@ st.sidebar.image(
 st.sidebar.markdown(
     """
     <p style="text-align:center; font-size:0.8em; color:gray;">
-    Image digitalisée, nettoyée et vectorialisée par l'utilisateur
-    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">Beretta_vexee</a> 👀
+    Image digitalisée, nettoyée et vectorialisée par un utilisateur
+    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">homonyme</a> 👀
     </p>
     """,
     unsafe_allow_html=True,
@@ -447,8 +447,8 @@ FR Le carnet traditionnel de David l'énervé est très validable."""
         st.divider()
 
         st.code(
-            """EN The head of engineering school Arts & Métiers teaches solidarity through student hazing.
-AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'z."""
+            """EN The administration of engineering school Arts & Métiers teaches solidarity through student hazing.
+AZ La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'z."""
         )
         st.write("Evaluate this 2nd random template:")
         selected_2 = st.feedback("thumbs", key="f2")
@@ -596,6 +596,13 @@ AZ La Strass des Gadzarts est lar's fratern's, zamer's pour cette Usin's à Gad'
 
     with st.expander("📖 Afficher le dictionnaire Argad'z"):
         st.write("🚧 👷 🚧")
+
+        st.image(
+            "https://upload.wikimedia.org/wikipedia/commons/archive/6/69/20180210154153%21Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG"
+        )
+
+        st.video("https://www.youtube.com/watch?v=U7CZcd-UYmU")
+
         st.image(
             "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
         )
@@ -620,11 +627,10 @@ sentiment_mapping = [
     "Bel eff's du phi's à l'app's !",
     "Le phi's HM lar's l'app's !",
 ]
-selected = st.feedback("stars")
+selected = st.feedback("faces")
 if selected is not None:
     st.markdown(f"{sentiment_mapping[selected]}")
-if selected == 4:
-    st.balloons()
+
 
 st.divider()
 
