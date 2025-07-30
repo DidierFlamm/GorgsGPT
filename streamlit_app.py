@@ -7,8 +7,8 @@ import time
 
 
 st.set_page_config(
-    page_title="GorgsGPT for KIN 226",
-    page_icon="🎁",
+    page_title="GorgsGPT",
+    page_icon="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
     initial_sidebar_state="collapsed",
     menu_items={
         "Get Help": None,
