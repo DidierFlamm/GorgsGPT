@@ -9,12 +9,12 @@ import time
 st.set_page_config(
     page_title="GorgsGPT for KIN 226",
     page_icon="🎁",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
     menu_items={
         "Get Help": None,
         "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
-© 2025 Didier Flamm  
+© 2025 K'PTN' 42 @ KIN 201
 ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
 """,
     },
@@ -183,17 +183,42 @@ else:
     st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
 
 st.sidebar.subheader(
-    ":violet[🪇 Strass de l'Em's]", divider=True
+    ":violet[🎛️ Strass de l'Em's]", divider=True
 )  ########################################
 
+st.sidebar.caption(
+    "⚠️ GorgsGPT vous offre gratuitement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) et avec votre écran de mobile verrouillé 🙊"
+)
 
-st.sidebar.write("🎛️ Chants Trad's randomizés:")
+video_url = "https://www.youtube.com/watch?v=Rts_R1cx6oE"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© Li 212</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© Strass Academy @ KIN 201</p>
+    """,
+    unsafe_allow_html=True,
+)
 
 video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
 st.sidebar.video(video_url, autoplay=False, muted=False)
-
 st.sidebar.markdown(
     """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© Cl 219</p>
     """,
     unsafe_allow_html=True,
 )
@@ -334,6 +359,14 @@ if ad:
 st.sidebar.subheader(
     ":violet[💜 Fratern's]", divider=True
 )  ########################################
+
+video_url = "https://www.youtube.com/watch?v=k8ytZ_Zcius"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Syrine Kaouane</p>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
