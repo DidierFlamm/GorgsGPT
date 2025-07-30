@@ -64,17 +64,18 @@ st.sidebar.link_button(
 )
 
 st.sidebar.link_button(
-    "🗃️ Archives Arts et Métiers",
-    "https://francearchives.gouv.fr/fr/subject/221557278?aug=True&es_publisher=26288058&indexentry=221557278&restrict_to_single_etype=False&sort=-sortdate",
-    use_container_width=True,
-)
-
-st.sidebar.link_button(
     "🔎  Annuaire de la Société des Anciens Élèves des Écoles Nationales d'Arts et Métiers",
     "https://gallica.bnf.fr/ark:/12148/bd6t543083231/f3.item.double.item",
     use_container_width=True,
 )
 
+st.sidebar.link_button(
+    "🗃️ Archives Arts et Métiers",
+    "https://francearchives.gouv.fr/fr/subject/221557278?aug=True&es_publisher=26288058&indexentry=221557278&restrict_to_single_etype=False&sort=-sortdate",
+    use_container_width=True,
+)
+
+st.sidebar.divider()
 
 tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's:",
@@ -128,8 +129,8 @@ st.sidebar.divider()
 pg = st.sidebar.selectbox(
     "Choisis un PG:",
     (
-        "[Bucque] [Fam's]",
-        "exemple: Road 9️⃣9️⃣9️⃣",
+        "PG Norm's",
+        "Rom's 9️⃣9️⃣9️⃣",
     ),
 )
 
@@ -137,13 +138,9 @@ pg = st.sidebar.selectbox(
 if pg.endswith("9️⃣9️⃣9️⃣"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
-    st.sidebar.markdown(
-        """<p style="text-align:center; font-size:0.8em; color:gray;">© Strass Academy @ KIN 201</p>
-        """,
-        unsafe_allow_html=True,
-    )
+
     st.sidebar.link_button(
-        "Envoyer un 👍 au PG",
+        f"Envoyer un 📧 à Rom's",
         f"mailto:999{tabagns.split(" ")[0]}{anns}@gadz.org",
         use_container_width=True,
     )
@@ -167,7 +164,7 @@ else:
     st.sidebar.write(":violet[2. 📧 <fams><tabagns><anns>@gadz.org]")
 
     st.sidebar.link_button(
-        "Envoyer un 📧 au phi's",
+        "Envoyer un 📧 au PG Norm's",
         f"mailto:'fams''tabagns''anns'@gadz.org",
         use_container_width=True,
     )
@@ -188,11 +185,11 @@ else:
     )
 
 st.sidebar.subheader(
-    ":violet[🎛️ YouGorgs Premium]", divider=True
+    ":violet[🎛️ YouGorgs]", divider=True
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec l'écran de votre mobile verrouillé 🙊"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
 )
 
 with st.sidebar.expander("🔞 J'ai plus de 18 ans ✋"):
@@ -418,7 +415,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 st.sidebar.markdown(
-    "<p style='text-align: center; font-size: 14px; color: gray;'>© Didier FLAMM</p>",
+    "<p style='text-align: center; font-size: 14px; color: gray;'>© 2023 Didier Flamm</p>",
     unsafe_allow_html=True,
 )
 
@@ -720,7 +717,7 @@ st.markdown(
     🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
     🤗 <a href="https://GorgsGPT.com/" target="_blank">GorgsGPT</a> est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
     ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
-    © 226 K'PTN' 42 @ KIN 201<br>🫶
+    © 226 KIN 201<br>🫶
     </div>
     """,
     unsafe_allow_html=True,
