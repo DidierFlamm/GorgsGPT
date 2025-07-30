@@ -192,7 +192,7 @@ st.sidebar.caption(
     "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement YouTube Cloud Premium des Trad's: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
 )
 
-with st.sidebar.expander("🔞 J'ai plus de 18 ans ✋"):
+with st.sidebar.expander("🔞 Je n'ai plus 18 ans (malheureusement) ! ✋"):
 
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.video(video_url, autoplay=False, muted=False)
@@ -472,22 +472,69 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
+st.subheader(":violet[🥸 GorgsGPT (Version Untrained !)]")
+
+# Initialisation de l'historique si besoin
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
+
+# Affichage dans un conteneur avec hauteur limitée
+st.write("History of your conversations with GorgsGPT:")
+messages = st.container(height=300)
+
+# Affichage de l'historique
+with messages:
+    for role, msg in st.session_state.chat_history:
+        messages.chat_message(role).write(msg)
+
+# Récupération de l'entrée utilisateur
+if prompt := st.chat_input("Say something to GorgsGPT"):
+    # Ajout du message utilisateur
+    st.session_state.chat_history.append(("user", prompt))
+
+    # Réponse de GorgsGPT
+    response = (
+        f"Zmer's .onscrit pour ton '{prompt}' ! "
+        "Reçois en retour le 'Bel eff's du phi's à l'app's' et n'hésite pas à poursuivre ta brasse Trad's avec GorgsGPT Untrained."
+    )
+    st.session_state.chat_history.append(("assistant", response))
+
+    # Affichage immédiat dans le container
+    messages.chat_message("user").write(prompt)
+    messages.chat_message("assistant").write(response)
+
+if st.button("🧹 Clear the Chat"):
+    st.session_state.chat_history = []
+    st.rerun()
+
+
 st.divider()
 
 on = st.toggle(
     "I consent to anonymously submitting a translation template to train GorgsGPT."
 )
 
-st.divider()
 
 if not on:
 
+    st.divider()
+
     st.image(
         "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/M.ENSAM.H.A.png",
-        caption="© 226 GorgsGPT",
+        caption="© 226 MEHA by GorgsGPT",
+    )
+
+    st.link_button(
+        "Order now your MAGA Baseball Cap ! 🤑",
+        "https://www.amazon.fr/Chapeau-cheveux-R%C3%A9glable-Casquette-baseball/dp/B0CX9J72ZK/?th=1&psc=1",
+        use_container_width=True,
+        icon="⚾",
     )
 
 else:
+
+    st.subheader("Setup your submission:", divider=True)
 
     st.segmented_control(
         "🫗 Source language",
@@ -540,22 +587,35 @@ AZ La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'
                     key="input_2",
                 )
 
-    st.write("Scan a new personal translation template:")
+    st.subheader("Scan a new personal translation template:", divider=True)
 
     enable = st.checkbox("Enable camera")
-    picture = st.camera_input("Scan your translation template", disabled=not enable)
+    picture = st.camera_input("Scan a document", disabled=not enable)
 
     if picture:
-
-        st.error(
-            """Unable to detect Source language and/or Target language.  
-            Please press ⏳ Rerun to give it a deeper look or ✖️ Clear Photo above to scan a new template.""",
-            icon="⁉️",
-        )
-        if st.button("⏳ Rerun"):
+        st.write("Review your scan:")
+        st.image(picture)
+        if st.button("Upload your scan", icon="📤"):
             with st.spinner("Wait for it...", show_time=True):
                 time.sleep(5)
-            st.warning(
+            st.error(
+                """Oops! A translation error was detected in your template. Please review it and try again later.""",
+                icon="😬",
+            )
+
+    st.subheader("Record a new personal translation template:", divider=True)
+    audio_value = st.audio_input("Record a voice message")
+    if audio_value:
+        st.write("Review your record:")
+        st.audio(audio_value)
+        st.caption(
+            "⚠️ You can adjust the playback speed or freely download your own recording by clicking on the three-dot menu located on the right side of the audio bar."
+        )
+
+        if st.button("Upload your record", icon="📤"):
+            with st.spinner("Wait for it...", show_time=True):
+                time.sleep(5)
+            st.error(
                 """Oops! A translation error was detected in your template. Please review it and try again later.""",
                 icon="😬",
             )
@@ -612,6 +672,9 @@ AZ La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'
             height=45,
         )
 
+    st.write("Evaluate this transcription:")
+    st.feedback("thumbs", key="f3")
+
     st.divider()  ########################################################################################
 
     st.subheader(":violet[🚧 Argad'z to French 🚧]")
@@ -662,47 +725,45 @@ AZ La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'
             height=45,
         )
 
-    st.divider()  ########################################################################################
+    st.write("Evaluate this transcription:")
+    st.feedback("thumbs", key="f4")
 
-    st.subheader(":green[✅ GorgsGPT]")
-    st.text_area("coming soon...", disabled=True)
+st.divider()  ############################################################################################
 
-    st.divider()  ############################################################################################
+st.subheader(":violet[🚨 Vocab's]")
 
-    st.subheader(":violet[🚨 Vocab's]")
+with st.expander("📖 Afficher le dictionnaire Argad'z"):
+    st.write("🚧 👷 🚧")
 
-    with st.expander("📖 Afficher le dictionnaire Argad'z"):
-        st.write("🚧 👷 🚧")
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/archive/6/69/20180210154153%21Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG"
+    )
 
-        st.image(
-            "https://upload.wikimedia.org/wikipedia/commons/archive/6/69/20180210154153%21Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG"
-        )
+    st.video("https://www.youtube.com/watch?v=U7CZcd-UYmU")
 
-        st.video("https://www.youtube.com/watch?v=U7CZcd-UYmU")
-
-        st.image(
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
-        )
-        st.markdown(
-            """
-        <div style='text-align: center; font-size: 0.8em; color: gray;'>
-        © 218 <a href="https://commons.wikimedia.org/wiki/User:Jean_GUERIN_2" target="_blank">Jean GUERIN 2</a> 
-        
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
+    st.image(
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
+    )
+    st.markdown(
+        """
+    <div style='text-align: center; font-size: 0.8em; color: gray;'>
+    © 218 <a href="https://commons.wikimedia.org/wiki/User:Jean_GUERIN_2" target="_blank">Jean GUERIN 2</a> 
+    
+    </div>
+    """,
+        unsafe_allow_html=True,
+    )
 
 st.divider()
 
 st.subheader(":blue[💙 Rate this app's]")
 
 sentiment_mapping = [
-    "L'app's foüt la méga gerbe au phi's !",
-    "Keud's de fratern's pour l'app's !",
-    "C'est trop fay's pour GorgsGPT",
-    "Bel eff's du phi's à l'app's !",
-    "Le phi's HM lar's l'app's !",
+    "💬 L'app's foüt la méga gerbe au phi's !",
+    "💬 Keud's de fratern's pour l'app's !",
+    "💬 C'est le phi's qui te fait payser ?",
+    "💬 Bel eff's du phi's à l'app's !",
+    "💬 Le phi's HM lar's l'app's !",
 ]
 selected = st.feedback("faces")
 if selected is not None:
