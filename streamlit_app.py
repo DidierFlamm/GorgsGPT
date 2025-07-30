@@ -116,8 +116,13 @@ pg = st.sidebar.selectbox(
 
 
 if pg.endswith("9️⃣9️⃣9️⃣"):
-    video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
+    video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
+    st.sidebar.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Strass Academy @ KIN 201</p>
+        """,
+        unsafe_allow_html=True,
+    )
     st.sidebar.link_button(
         "Envoyer un 👍 au PG",
         f"mailto:999{tabagns.split(" ")[0]}{anns}@gadz.org",
@@ -171,45 +176,83 @@ st.sidebar.caption(
     "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec l'écran de votre mobile verrouillé 🙊"
 )
 
-video_url = "https://www.youtube.com/watch?v=Rts_R1cx6oE"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© Li 212</p>
-    """,
-    unsafe_allow_html=True,
-)
+with st.sidebar.expander("🔞 J'ai plus de 18 ans ✋"):
 
-video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© Strass Academy @ KIN 201</p>
-    """,
-    unsafe_allow_html=True,
-)
+    video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Kin 201 🤓</p>
+        """,
+        unsafe_allow_html=True,
+    )
 
-video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
-    """,
-    unsafe_allow_html=True,
-)
+    video_url = "https://www.youtube.com/watch?v=S_eslL8DIuU"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Kin 212 Gorgu FM 👆👇</p>
+        """,
+        unsafe_allow_html=True,
+    )
 
+    video_url = "https://www.youtube.com/watch?v=LFAl0xnc300"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Kin 212 Version Karaoké 🎤</p>
+        """,
+        unsafe_allow_html=True,
+    )
 
-video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© Cl 219</p>
-    """,
-    unsafe_allow_html=True,
-)
+    video_url = "https://www.youtube.com/watch?v=Rts_R1cx6oE"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Li 212 🧢</p>
+        """,
+        unsafe_allow_html=True,
+    )
 
-st.sidebar.divider()
+    video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Cl 219 🖤</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    video_url = "https://www.youtube.com/watch?v=lNfAtaURtBI"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Charlotte Cardin 📛</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    video_url = "https://www.youtube.com/watch?v=4m73Cm2H0xM"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Kream 🏃</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    video_url = "https://www.youtube.com/watch?v=wDYoed0wVgM"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 DJ THT 💣</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
 
 st.sidebar.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass")
 st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes co-prom's.")
-
-st.sidebar.divider()
 
 st.sidebar.write(
     "⚠️ En attendant la valid's de tes co-strass, tu peux tester ta videal Trad's en collant le lien YouTube ci-dessous:"
