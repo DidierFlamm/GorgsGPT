@@ -70,7 +70,7 @@ st.sidebar.link_button(
 )
 
 st.sidebar.link_button(
-    "🗃️ Archives Arts et Métiers",
+    "🗃️ Archives nationales des Arts et Métiers",
     "https://francearchives.gouv.fr/fr/subject/221557278?aug=True&es_publisher=26288058&indexentry=221557278&restrict_to_single_etype=False&sort=-sortdate",
     use_container_width=True,
 )
