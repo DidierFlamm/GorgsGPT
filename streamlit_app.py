@@ -403,7 +403,9 @@ st.markdown(
 
 st.divider()
 
-on = st.toggle("I consent to anonymously submitting a template to train GorgsGPT.")
+on = st.toggle(
+    "I consent to anonymously submitting a translation template to train GorgsGPT."
+)
 
 st.divider()
 
