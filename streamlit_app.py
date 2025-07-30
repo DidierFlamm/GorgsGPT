@@ -168,7 +168,7 @@ st.sidebar.subheader(
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec votre mobile verrouillé 🙊"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec l'écran de votre mobile verrouillé 🙊"
 )
 
 video_url = "https://www.youtube.com/watch?v=Rts_R1cx6oE"
@@ -195,8 +195,6 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.write("Visionne ta videal Trad's")
-
 
 video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
 st.sidebar.video(video_url, autoplay=False, muted=False)
@@ -209,12 +207,12 @@ st.sidebar.markdown(
 st.sidebar.divider()
 
 st.sidebar.file_uploader("Upload ta videal:", disabled=True, key="strass")
-st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
+st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes co-prom's.")
 
 st.sidebar.divider()
 
 st.sidebar.write(
-    "⚠️ En attendant la valid's de tes co-strass, tu peux visionner ta videal Trad's en collant le lien YouTube ci-dessous:"
+    "⚠️ En attendant la valid's de tes co-strass, tu peux tester ta videal Trad's en collant le lien YouTube ci-dessous:"
 )
 
 yt = st.sidebar.text_input(
