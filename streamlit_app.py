@@ -57,6 +57,25 @@ def st_norms(text: str, size: str = "2em"):
 
 st.sidebar.subheader(":green[N² Prom's]", divider=True)  ########################
 
+st.sidebar.link_button(
+    "📜 Liste d'élèves d'Arts et Métiers ParisTech",
+    "https://fr.wikipedia.org/wiki/Liste_d%27%C3%A9l%C3%A8ves_d%27Arts_et_M%C3%A9tiers_ParisTech",
+    use_container_width=True,
+)
+
+st.sidebar.link_button(
+    "🗃️ Archives Arts et Métiers",
+    "https://francearchives.gouv.fr/fr/subject/221557278?aug=True&es_publisher=26288058&indexentry=221557278&restrict_to_single_etype=False&sort=-sortdate",
+    use_container_width=True,
+)
+
+st.sidebar.link_button(
+    "🔎  Annuaire de la Société des Anciens Élèves des Écoles Nationales d'Arts et Métiers",
+    "https://gallica.bnf.fr/ark:/12148/bd6t543083231/f3.item.double.item",
+    use_container_width=True,
+)
+
+
 tabagns = st.sidebar.selectbox(
     "Choisis un Tabagn's:",
     (
@@ -72,7 +91,7 @@ tabagns = st.sidebar.selectbox(
 )
 
 anns = st.sidebar.select_slider(
-    "Choisis une Ann's:", options=range(-20, 226), value=201
+    "Choisis une Ann's:", options=range(-17, 226), value=201
 )
 
 
@@ -321,13 +340,25 @@ st.sidebar.markdown(
 
 
 st.sidebar.subheader(
-    ":orange[🤝 Site de la Soce]", divider=True
+    ":orange[Soce Arts et Métiers]", divider=True
 )  ####################################
 
 st.sidebar.markdown(
     """
     <a href="https://www.arts-et-metiers.asso.fr" target="_blank">
         <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amalumni.webp" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+st.sidebar.subheader(
+    ":blue[Fondation Arts et Métiers]", divider=True
+)  ####################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://fondationartsetmetiers.org/" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/FondationAM.jpg" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
@@ -689,7 +720,7 @@ st.markdown(
     🎁 À KIN 226 et à toutes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
     🤗 <a href="https://GorgsGPT.com/" target="_blank">GorgsGPT</a> est un chatbot open source utilisant l’API de <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
     ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
-    © 226 KIN 201<br>🫶
+    © 226 K'PTN' 42 @ KIN 201<br>🫶
     </div>
     """,
     unsafe_allow_html=True,
