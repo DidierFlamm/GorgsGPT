@@ -183,6 +183,22 @@ else:
     st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble des co-strass.")
 
 st.sidebar.subheader(
+    ":violet[🪇 Strass de l'Em's]", divider=True
+)  ########################################
+
+
+st.sidebar.write("🎛️ Chants Trad's randomizés:")
+
+video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
 )  ########################################
 
@@ -221,6 +237,19 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+
+st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
+
+st.sidebar.markdown(
+    """
+    <a href="https://fr.wikipedia.org/wiki/Gadzarts" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Wikipedia.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 st.sidebar.subheader(
     ":orange[🤝 Site de la Soce]", divider=True
 )  ####################################
@@ -234,30 +263,46 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
+
+st.sidebar.subheader("🛠️ Boîte à Oüt's", divider=True)
+
 
 st.sidebar.link_button(
-    "Ouvrir l’article Wikipédia",
-    "https://fr.wikipedia.org/wiki/Gadzarts",
+    "Contacter WikiGorgs",
+    "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact",
     use_container_width=True,
+    icon="📡",
 )
 
-st.sidebar.subheader(
-    ":violet[🪇 Strass de l'Em's]", divider=True
-)  ########################################
-
-
-st.sidebar.write("🎛️ Chants Trad's randomizés:")
-
-video_url = "https://www.youtube.com/watch?v=wi288eHFk18"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© 224 Lupage feat. Joe Kox 😎😎</p>
-    """,
-    unsafe_allow_html=True,
+st.sidebar.link_button(
+    "Contacter Streamlit",
+    "https://discuss.streamlit.io/",
+    use_container_width=True,
+    icon="💬",
 )
 
+
+st.sidebar.link_button(
+    "Gérer votre compte",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
+    use_container_width=True,
+    icon="🔑",
+)
+
+st.sidebar.link_button(
+    "Voir Privacy Policy",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy",
+    use_container_width=True,
+    icon="🚔",
+)
+
+
+st.sidebar.link_button(
+    "Lar's important",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
+    use_container_width=True,
+    icon="‼️",
+)
 
 st.sidebar.subheader(
     ":blue[🌊 App's de K'PTN' 42 🏄‍♂️]", divider=True
@@ -303,40 +348,6 @@ st.sidebar.markdown(
     </p>
     """,
     unsafe_allow_html=True,
-)
-
-st.sidebar.divider()
-
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">👉 
-    <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact" target="_blank">Wikipedia: Contact</a>
-    </p>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">👉 
-    <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank">Wikimedia: Privacy Policy</a>
-    </p>
-    """,
-    unsafe_allow_html=True,
-)
-
-st.sidebar.divider()
-
-st.sidebar.link_button(
-    "Créer un compte",
-    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
-    use_container_width=True,
-    icon="🔑",
-)
-
-st.sidebar.link_button(
-    "Lar's important",
-    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
-    use_container_width=True,
-    icon="‼️",
 )
 
 
