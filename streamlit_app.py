@@ -119,7 +119,7 @@ if pg.endswith("9️⃣9️⃣9️⃣"):
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.sidebar.video(video_url, autoplay=False, muted=False)
     st.sidebar.link_button(
-        "Envoyer un 📧 au phi's",
+        "Envoyer un 👍 au PG",
         f"mailto:999{tabagns.split(" ")[0]}{anns}@gadz.org",
         use_container_width=True,
     )
