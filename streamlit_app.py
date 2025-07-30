@@ -178,18 +178,18 @@ else:
         "⚠️ Connexion LinkedIn requise : vous choisissez d’autoriser ou non GorgsGPT à accéder aux infos publiques de votre profil LinkedIn."
     )
 
-    st.sidebar.link_button(
-        "🏡 Se connecter à LinkedIn",
-        "https://www.linkedin.com/groups/13343076/",
-        use_container_width=True,
-    )
+st.sidebar.link_button(
+    "🏡 Se connecter à LinkedIn",
+    "https://www.linkedin.com/groups/13343076/",
+    use_container_width=True,
+)
 
 st.sidebar.subheader(
     ":violet[🎛️ YouGorgs]", divider=True
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à son abonnement YouTube Premium: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement YouTube Cloud Premium des Trad's: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
 )
 
 with st.sidebar.expander("🔞 J'ai plus de 18 ans ✋"):
@@ -271,7 +271,7 @@ st.sidebar.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass"
 st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes coprom's.")
 
 st.sidebar.write(
-    "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant le lien YouTube ci-dessous:"
+    "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant n'importe quel lien YouTube ci-dessous:"
 )
 
 yt = st.sidebar.text_input(
