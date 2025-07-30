@@ -206,7 +206,7 @@ st.sidebar.markdown(
 
 st.sidebar.divider()
 
-st.sidebar.file_uploader("Upload ta videal:", disabled=True, key="strass")
+st.sidebar.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass")
 st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes co-prom's.")
 
 st.sidebar.divider()
