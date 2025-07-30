@@ -268,10 +268,10 @@ with st.sidebar.expander("🔞 J'ai plus de 18 ans ✋"):
 
 
 st.sidebar.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass")
-st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes co-prom's.")
+st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes coprom's.")
 
 st.sidebar.write(
-    "⚠️ En attendant la valid's de tes co-strass, tu peux tester ta videal Trad's en collant le lien YouTube ci-dessous:"
+    "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant le lien YouTube ci-dessous:"
 )
 
 yt = st.sidebar.text_input(
