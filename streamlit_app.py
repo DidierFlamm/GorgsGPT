@@ -528,7 +528,7 @@ with st.expander("📖 Afficher le dictionnaire Argad'z"):
     st.markdown(
         """
     <div style='text-align: center; font-size: 0.8em; color: gray;'>
-    © 218 <a href="https://fr.wikipedia.org/wiki/Utilisateur:Jean_GUERIN_2" target="_blank">Jean GUERIN 2</a> 
+    © 218 <a href="https://fr.wikipedia.org/wiki/Utilisateur:Jean_GUERIN_2" target="_blank">Jean Guerin 2</a> 
     
     </div>
     """,
