@@ -362,7 +362,7 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader("🛠️ Boîte à Oüt's", divider=True)
+st.sidebar.subheader("🛠️ Boîte à Oüt's de GorgsGPT", divider=True)
 
 
 st.sidebar.link_button(
