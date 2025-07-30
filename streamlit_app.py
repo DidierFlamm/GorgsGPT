@@ -219,6 +219,12 @@ yt = st.sidebar.text_input(
     "Lien YouTube:",
 )
 
+if yt:
+    try:
+        st.sidebar.video(yt)
+    except Exception:
+        st.sidebar.error("Desol's, le Gorgs ne trouve pas ta videal Trad's")
+
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
 )  ########################################
