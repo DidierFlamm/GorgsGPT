@@ -566,7 +566,7 @@ if prompt := st.chat_input("Say something to GorgsGUT"):
     st.session_state.chat_history.append(("user", prompt))
 
     # Réponse de GorgsGPT
-    response = f"Thanks for the {prompt} — but you’ll need to register if you're hoping for a reply 😈"
+    response = f"Thanks for the {prompt} — but you’ll need to register via the toolbox at the bottom of the sidebar if you want a reply 😈"
     st.session_state.chat_history.append(("assistant", response))
 
     # Affichage immédiat dans le container
