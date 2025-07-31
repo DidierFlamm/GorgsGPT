@@ -552,7 +552,7 @@ with messages:
 
 # Récupération de l'entrée utilisateur
 with st.expander("💬 Control panel", expanded=True):
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
 
     col1.toggle("YouGorgs", disabled=True)
 
@@ -560,8 +560,8 @@ with st.expander("💬 Control panel", expanded=True):
         st.session_state.chat_history = []
         st.rerun()
 
-    col3.write("Evaluate:")
-    rate = col4.feedback("thumbs")
+    
+    rate = col3.feedback("thumbs")
 
     if rate is None:
         subh.subheader(":blue[🥸 GorgsGUT™ v2.26]")
