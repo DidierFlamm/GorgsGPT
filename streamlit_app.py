@@ -534,14 +534,14 @@ st.markdown(
     unsafe_allow_html=True,
 )
 subh = st.empty()
-st.caption(":blue[© 226 Gorgs GadzUntrainedTransformer™]")
+st.caption(":blue[© 226 Gorgs GadzUntrainedTransformer]")
 
 # Initialisation de l'historique si besoin
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Affichage dans un conteneur avec hauteur limitée
-st.write("History of your kind conversations with GorgsGUT:")
+st.write("History of your great conversations with GorgsGUT:")
 messages = st.container(height=300)
 
 # Affichage de l'historique
@@ -564,11 +564,11 @@ with st.expander("💬 Control panel", expanded=True):
     rate = col3.feedback("thumbs")
 
     if rate is None:
-        subh.subheader(":blue[🥸 GorgsGUT™ v2.26]")
+        subh.subheader(":blue[🥸 GorgsGUT v2.26]")
     elif rate == 1:
-        subh.subheader(":blue[🥹 GorgsGUT™ v2.26]")
+        subh.subheader(":blue[🥹 GorgsGUT v2.26]")
     else:
-        subh.subheader(":blue[😢 GorgsGUT™ v2.26]")
+        subh.subheader(":blue[😢 GorgsGUT v2.26]")
 
     if prompt := st.chat_input("Say something to GorgsGUT™"):
 
