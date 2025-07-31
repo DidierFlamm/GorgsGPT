@@ -77,28 +77,27 @@ st.sidebar.link_button(
 
 st.sidebar.divider()
 
-tabagns = st.sidebar.selectbox(
-    "Choisis un Tabagn's:",
-    (
-        "KIN (Aix-en-Provence)",
-        "Boquette (Angers)",
-        "Bordel's (Bordeaux)",
-        "Châlon's (Châlons-en-Champagne)",
-        "Clun's (Cluny)",
-        "Karlsberg's ❔ (Karlsruhe)",
-        "Bir's (Lille)",
-        "Cyber's (Metz)",
-    ),
+options = [
+    "Bir's",
+    "Boquette",
+    "Bordel's",
+    "Châlon's",
+    "Clun's",
+    "Cyber's",
+    "Karlsberg's",
+    "Kin",
+]
+
+tabagns = st.sidebar.segmented_control(
+    "Choisis un Tabagn's:", options, selection_mode="single", default="Kin"
 )
 
-anns = st.sidebar.select_slider(
-    "Choisis une Ann's:", options=range(-17, 226), value=201
+anns = st.sidebar.number_input(
+    "Choisis une Ann's:", min_value=-17, max_value=226, value=201, step=1
 )
 
 
-st.sidebar.subheader(
-    f"{tabagns.split(" ")[0]} {anns}", divider=True
-)  ########################
+st.sidebar.subheader(f"{tabagns} {anns}", divider=True)  ########################
 
 
 vimeo_embed = """
@@ -192,7 +191,9 @@ st.sidebar.caption(
     "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement YouTube Cloud Premium des Trad's: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
 )
 
-with st.sidebar.expander("🔞 Je n'ai plus 18 ans (malheureusement) ! ✋"):
+with st.sidebar.expander(
+    "🔞 Je ✋ sur la tête de mon carn's que je n'ai plus 18 ans depuis n² tap's."
+):
 
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.video(video_url, autoplay=False, muted=False)
@@ -282,7 +283,33 @@ if yt:
     try:
         st.sidebar.video(yt)
     except Exception:
-        st.sidebar.error("Desol's, le Gorgs ne trouve pas ta videal Trad's")
+        st.sidebar.error(
+            "Desol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.", icon="❌"
+        )
+
+
+st.sidebar.subheader(
+    ":violet[💜 Fratern's]", divider=True
+)  ########################################
+
+video_url = "https://www.youtube.com/watch?v=k8ytZ_Zcius"
+st.sidebar.video(video_url, autoplay=False, muted=False)
+st.sidebar.markdown(
+    """<p style="text-align:center; font-size:0.8em; color:gray;">© 2022 Syrine Kaouane @ Bo 221</p>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(
+    ":green[💲 Keud's de Fratern's]", divider=True
+)  ########################################
+
+ad = st.sidebar.toggle("Votre pub ici pour...")
+
+if ad:
+    st.sidebar.write(":green[rien au monde ! 💸]")
+
+st.sidebar.divider()
 
 st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
@@ -362,48 +389,8 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader("🛠️ Boîte à Oüt's de GorgsGPT", divider=True)
-
-
-st.sidebar.link_button(
-    "Contacter WikiGorgs",
-    "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact",
-    use_container_width=True,
-    icon="📡",
-)
-
-st.sidebar.link_button(
-    "Contacter Streamlit",
-    "https://discuss.streamlit.io/",
-    use_container_width=True,
-    icon="💬",
-)
-
-
-st.sidebar.link_button(
-    "Gérer votre compte",
-    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
-    use_container_width=True,
-    icon="🔑",
-)
-
-st.sidebar.link_button(
-    "Voir Privacy Policy",
-    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy",
-    use_container_width=True,
-    icon="🚔",
-)
-
-
-st.sidebar.link_button(
-    "Lar's important",
-    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
-    use_container_width=True,
-    icon="‼️",
-)
-
 st.sidebar.subheader(
-    ":blue[🌊 App's de K'PTN' 42 🏄‍♂️]", divider=True
+    ":blue[🌊 Portfolio K'PTN' 42 🏄‍♂️]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -419,29 +406,114 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.divider()
 
-st.sidebar.subheader(
-    ":green[💲 Keud's de Fratern's]", divider=True
-)  ########################################
+st.sidebar.subheader(":orange[🛠️ Boîte à Oüt's]", divider=True)
 
-ad = st.sidebar.toggle("Votre pub ici pour...")
 
-if ad:
-    st.sidebar.write(":green[rien au monde ! 💸]")
+st.sidebar.link_button(
+    "Contacter WikiGorgs",
+    "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact",
+    use_container_width=True,
+    icon="📡",
+)
 
-st.sidebar.subheader(
-    ":violet[💜 Fratern's]", divider=True
-)  ########################################
+check1 = st.sidebar.checkbox(
+    "J'ai compilé et validé la procédure de contact WikiGorgs."
+)
 
-video_url = "https://www.youtube.com/watch?v=k8ytZ_Zcius"
-st.sidebar.video(video_url, autoplay=False, muted=False)
-st.sidebar.markdown(
-    """<p style="text-align:center; font-size:0.8em; color:gray;">© 2022 Syrine Kaouane @ Bo 221</p>
-    """,
-    unsafe_allow_html=True,
+st.sidebar.link_button(
+    "Contacter Streamlit",
+    "https://discuss.streamlit.io/",
+    use_container_width=True,
+    icon="💬",
+)
+
+check2 = st.sidebar.checkbox(
+    "J'ai compilé et validé la procédure de contact Streamlit."
+)
+
+st.sidebar.link_button(
+    "Contacter Hugging Face",
+    "https://huggingface.co/chat",
+    use_container_width=True,
+    icon="🤗",
+)
+
+check3 = st.sidebar.checkbox(
+    "J'ai compilé et validé la procédure de contact Hugging Face."
+)
+
+st.sidebar.link_button(
+    "Voir Privacy Policy",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy",
+    use_container_width=True,
+    icon="🚔",
+)
+
+check4 = st.sidebar.checkbox("J'ai compilé et validé la Privacy Policy de GorgsGPT.")
+
+st.sidebar.link_button(
+    "Informations importantes",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#Important_info",
+    use_container_width=True,
+    icon="🚨",
+)
+
+check5 = st.sidebar.checkbox(
+    "J'ai compilé et validé les informations importantes de GorgsGPT."
+)
+
+st.sidebar.link_button(
+    "Licence CC BY-SA 4.0",
+    "https://creativecommons.org/licenses/by-sa/4.0/deed.fr",
+    use_container_width=True,
+    icon="📜",
+)
+
+check6 = st.sidebar.checkbox("J'ai compilé et validé les CGU de GorgsGPT.")
+
+st.sidebar.link_button(
+    "Circonstances Particulières",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount",
+    use_container_width=True,
+    icon="⚠️",
+)
+
+check7 = st.sidebar.checkbox("J'ai compilé et validé les CPU de GorgsGPT.")
+
+disable_acc = True
+
+if check1 and check2 and check3 and check4 and check5 and check6 and check7:
+
+    st.sidebar.success(
+        "Bel eff's ! Tu as validé toutes les étapes nécessaires à la création de ton compte GorgsGPT. Il ne te reste plus qu'à cliquer sur le bouton ci-dessous pour accéder (enfin) à l'interface de gestion simplifiée grâce à ton login et mot de passe de la Soce. Tiens bon, tu as déjà fait au moins 90% de ce parcours du combattant 🦾",
+        icon="🏆",
+    )
+
+    disable_acc = False
+
+st.sidebar.link_button(
+    "Gérer votre compte",
+    "https://foundation.wikimedia.org/wiki/Policy:Privacy_policy#your-account-info",
+    use_container_width=True,
+    icon="🔐",
+    disabled=disable_acc,
 )
 
 st.sidebar.divider()
+
+st.sidebar.link_button(
+    "Contacter Wikimedia Foundation",
+    "https://meta.wikimedia.org/wiki/User:AKeton_(WMF)",
+    use_container_width=True,
+    icon="🆘",
+)
+
+st.sidebar.divider()
+
+st.sidebar.subheader("🖤 Trad's", divider=True)
+
 
 st.sidebar.image(
     "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
@@ -631,7 +703,7 @@ else:
                 st.write("❤️‍🔥")
             else:
                 st.text_input(
-                    "Seriously ? Offer a better translation template if you are as fluent as you pretend to be... You, Mr. Know-it-all PG 😤",
+                    "You dit it again ? ... You, Mr. Know-it-all PG 🤬",
                     "Your translation suggestion:",
                     key="input_2",
                 )
