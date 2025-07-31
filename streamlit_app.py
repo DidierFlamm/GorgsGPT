@@ -128,19 +128,19 @@ st.sidebar.divider()
 pg = st.sidebar.selectbox(
     "Choisis un PG:",
     (
-        "PG Norm's",
-        "Rom's 9️⃣9️⃣9️⃣",
+        "PG Moy's",
+        "Banga 1️⃣1️⃣3️⃣",
     ),
 )
 
 
-if pg.endswith("9️⃣9️⃣9️⃣"):
+if pg.endswith("1️⃣1️⃣3️⃣"):
     video_url = "https://www.youtube.com/watch?v=PhQeyRZGu-4"
     st.sidebar.video(video_url, autoplay=False, muted=False)
 
     st.sidebar.link_button(
-        f"Envoyer un 📧 à Rom's",
-        f"mailto:999{tabagns.split(" ")[0]}{anns}@gadz.org",
+        f"Envoyer un 📧 à {pg}",
+        f"mailto:113{tabagns}{anns}@gadz.org",
         use_container_width=True,
     )
 else:
