@@ -566,7 +566,7 @@ if prompt := st.chat_input("Say something to GorgsGUT"):
     st.session_state.chat_history.append(("user", prompt))
 
     # Réponse de GorgsGPT
-    response = f"Zmer's for this kind '{prompt}' but you have to get registered if you expect any answer."
+    response = f"Thanks for the {prompt} — but you’ll need to register if you're hoping for a reply 😈"
     st.session_state.chat_history.append(("assistant", response))
 
     # Affichage immédiat dans le container
@@ -603,11 +603,13 @@ with st.expander("📖 Afficher le dictionnaire Argad'z"):
         "https://upload.wikimedia.org/wikipedia/commons/archive/6/69/20180210154153%21Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG"
     )
 
-    st.video("https://www.youtube.com/watch?v=U7CZcd-UYmU")
-
-    st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
-    )
+    if st.button("Pages suivantes", icon="⏩"):
+        st.video(
+            "https://www.youtube.com/watch?v=U7CZcd-UYmU", autoplay=True, muted=False
+        )
+        st.image(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG/960px-Carnet_de_traditions_gadzarts_%2C_dictionnaire.JPG",
+        )
     st.markdown(
         """
     <div style='text-align: center; font-size: 0.8em; color: gray;'>
@@ -621,11 +623,11 @@ with st.expander("📖 Afficher le dictionnaire Argad'z"):
 st.divider()
 
 on = st.toggle(
-    "I want to contribuate to this hot project and I consent to anonymously submitting a translation template to train GorgsGPT (mandatory)"
+    "I'm happy to contribute to this project and agree to anonymously submit a translation template to help train GorgsGPT (required)."
 )
 
 troll = st.toggle(
-    "I want to receive analytics at least 3 times a day about the balanced accuracy evolution of GorgsGUT™ (to be honnest, you should not want that)"
+    "I want to receive analytics at least three times a day on the evolution of GorgsGUT™ imbalanced accuracy (even though, honestly, no one should want that)."
 )
 
 if troll:
