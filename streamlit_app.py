@@ -556,11 +556,11 @@ with st.expander("💬 Control panel", expanded=True):
 
     col1.toggle("YouGorgs", disabled=True)
 
-    if col2.button("🧹 Clean this mess"):
+    if col2.button("🧹 Clean up"):
         st.session_state.chat_history = []
         st.rerun()
 
-    col3.write("Rate your experience:")
+    col3.write("Evaluate:")
     rate = col4.feedback("thumbs")
 
     if rate is None:
