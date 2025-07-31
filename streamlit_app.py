@@ -9,12 +9,12 @@ import time
 st.set_page_config(
     page_title="GorgsGPT",
     page_icon="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state=None,
     menu_items={
         "Get Help": None,
         "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
-© 2025 K'PTN' 42 @ KIN 201
+© 2025 K'ptn' 42 @ Kin 201
 ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
 """,
     },
@@ -160,11 +160,11 @@ else:
             icon="😅",
         )
 
-    st.sidebar.write(":violet[2. 📧 <fams><tabagns><anns>@gadz.org]")
+    st.sidebar.write(":violet[2. 📧 fam's|tabagn's|ann's@gadz.org]")
 
     st.sidebar.link_button(
-        "Envoyer un 📧 au PG Norm's",
-        f"mailto:'fams''tabagns''anns'@gadz.org",
+        "Envoyer un 📧 à PG Moys's",
+        f"mailto:fams|tabagns|anns@gadz.org",
         use_container_width=True,
     )
 
