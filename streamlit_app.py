@@ -110,19 +110,6 @@ vimeo_embed = """
 with st.sidebar:
     components.html(vimeo_embed, height=180)
 
-with st.sidebar:
-    col1, col2 = st.columns([1, 2])  # 2 colonnes, col2 plus large
-
-    with col1:
-        st.image(
-            "https://i.vimeocdn.com/portrait/115967603_72x72",
-            use_container_width=True,
-            caption="portrait de l'auteur.e (en option)",
-        )
-
-    with col2:
-        st.write("© 225 Claire Barrin")
-
 st.sidebar.divider()
 
 pg = st.sidebar.selectbox(
