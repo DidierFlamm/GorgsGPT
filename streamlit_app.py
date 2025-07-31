@@ -471,16 +471,15 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-
-st.subheader(":blue[🥸 GorgsGPT (Version Untrained !)]")
+subh = st.empty()
+st.caption(":blue[© 226 Gorgs GadzUntrainedTransformer™]")
 
 # Initialisation de l'historique si besoin
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # Affichage dans un conteneur avec hauteur limitée
-st.write("History of your conversations with GorgsGPT:")
+st.write("History of your kind conversations with GorgsGUT:")
 messages = st.container(height=300)
 
 # Affichage de l'historique
@@ -488,25 +487,37 @@ with messages:
     for role, msg in st.session_state.chat_history:
         messages.chat_message(role).write(msg)
 
+
 # Récupération de l'entrée utilisateur
-if prompt := st.chat_input("Say something to GorgsGPT"):
+if prompt := st.chat_input("Say something to GorgsGUT"):
     # Ajout du message utilisateur
     st.session_state.chat_history.append(("user", prompt))
 
     # Réponse de GorgsGPT
-    response = (
-        f"Zmer's .onscrit pour ton '{prompt}' ! "
-        "Reçois en retour le 'Bel eff's du phi's à l'app's' et n'hésite pas à poursuivre ta brasse Trad's avec GorgsGPT Untrained."
-    )
+    response = f"Zmer's for this kind '{prompt}' but you have to get registered if you expect any answer."
     st.session_state.chat_history.append(("assistant", response))
 
     # Affichage immédiat dans le container
     messages.chat_message("user").write(prompt)
     messages.chat_message("assistant").write(response)
 
-if st.button("🧹 Clear the Chat"):
+col1, col2, col3, col4 = st.columns(4)
+
+col1.toggle("YouGorgs free trial", disabled=True)
+
+if col2.button("🧹 Clean GorgsGPT"):
     st.session_state.chat_history = []
     st.rerun()
+
+col3.write("Rate your experience:")
+rate = col4.feedback("thumbs")
+
+if rate is None:
+    subh.subheader(":blue[🥸 GorgsGUT™ v2.26]")
+elif rate == 1:
+    subh.subheader(":blue[🥹 GorgsGUT™ v2.26]")
+else:
+    subh.subheader(":blue[😢 GorgsGUT™ v2.26]")
 
 
 st.divider()
@@ -538,9 +549,18 @@ with st.expander("📖 Afficher le dictionnaire Argad'z"):
 st.divider()
 
 on = st.toggle(
-    "I consent to anonymously submitting a translation template to train GorgsGPT."
+    "I want to contribuate to this hot project and I consent to anonymously submitting a translation template to train GorgsGPT (mandatory)"
 )
 
+troll = st.toggle(
+    "I want to receive analytics at least 3 times a day about the balanced accuracy evolution of GorgsGUT™ (to be honnest, you should not want that)"
+)
+
+if troll:
+    st.toggle(
+        "I certify being over 18 (disabled if you are not yet registered or if you can't prove it)",
+        disabled=True,
+    )
 
 if not on:
 
@@ -578,38 +598,41 @@ else:
 
     with st.expander("View 'Pierre de Rosette' random samples"):
         st.code(
-            """AZ Le carn's des trad's du vénérable Dav's est lar's étal's.  
-FR Le carnet traditionnel de David l'énervé est très validable."""
+            """🏳️ Le carn's des trad's du vénérable Dav's est lar's étal's. ⁉️  
+🇫🇷 Le carnet traditionnel de 'David l`énervé' est très validable. ✅
+
+"""
         )
 
-        st.write("Evaluate this 1st random template:")
+        st.write("Evaluate the green patterns above:")
         selected_1 = st.feedback("thumbs", key="f1")
         if selected_1 is not None:
             if selected_1 == 1:
-                st.write("🥹")
+                st.write("❤️‍🔥")
             else:
                 st.text_input(
-                    "Offer a better translation template if you can...",
-                    "Your translation suggestion",
+                    "Seriously ? Offer a better translation template if you are as fluent as you pretend to be... You, Mr. Know-it-all PG 😤",
+                    "Your translation suggestion:",
                     key="input_1",
                 )
 
         st.divider()
 
         st.code(
-            """EN The administration of engineering school Arts & Métiers teaches solidarity through student hazing.
-AZ La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'z."""
+            """🏳️‍🌈 The administration of engineering school Arts & Métiers teaches solidarity through student hazing. ⁉️
+🏁 La Strass des Trad's est lar's fratern's, bel eff's pour cette Usin's à Gad'z. ✅
+"""
         )
-        st.write("Evaluate this 2nd random template:")
+        st.write("Evaluate the green patterns above:")
         selected_2 = st.feedback("thumbs", key="f2")
 
         if selected_2 is not None:
             if selected_2 == 1:
-                st.write("🥹")
+                st.write("❤️‍🔥")
             else:
                 st.text_input(
-                    "Offer a better translation template if you can...",
-                    "Your translation suggestion",
+                    "Seriously ? Offer a better translation template if you are as fluent as you pretend to be... You, Mr. Know-it-all PG 😤",
+                    "Your translation suggestion:",
                     key="input_2",
                 )
 
