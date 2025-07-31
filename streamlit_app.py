@@ -551,7 +551,7 @@ with messages:
 
 
 # Récupération de l'entrée utilisateur
-with st.expander("💬 Control panel", expanded=True):
+with st.expander("⚙️ Control panel", expanded=True):
     col1, col2, col3 = st.columns(3)
 
     col1.toggle("YouGorgs", disabled=True)
