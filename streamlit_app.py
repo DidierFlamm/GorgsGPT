@@ -126,7 +126,7 @@ if pg.endswith("1️⃣1️⃣3️⃣"):
     st.sidebar.video(video_url, autoplay=False, muted=False)
 
     st.sidebar.link_button(
-        f"Envoyer un 📧 à {pg}",
+        f"📧 {pg}",
         f"mailto:113{tabagns}{anns}@gadz.org",
         use_container_width=True,
     )
@@ -150,7 +150,7 @@ else:
     st.sidebar.write(":violet[2. 📧 fam's|tabagn's|ann's@gadz.org]")
 
     st.sidebar.link_button(
-        "Envoyer un 📧 à PG Moys's",
+        "📧 PG Moys's",
         f"mailto:fams|tabagns|anns@gadz.org",
         use_container_width=True,
     )
