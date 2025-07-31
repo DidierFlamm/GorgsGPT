@@ -633,7 +633,7 @@ if not on:
 
     st.image(
         "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/M.ENSAM.H.A.png",
-        caption="""MEHA  
+        caption="""ME🔥A  
         © 226 GorgsGPT""",
     )
 
