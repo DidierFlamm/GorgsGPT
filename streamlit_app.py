@@ -533,6 +533,9 @@ st.sidebar.markdown(
 
 ###############################################################################################################
 
+# Scroll forcé en haut dès le début de l'app
+st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
+
 st.image("https://github.com/DidierFlamm/GorgsGPT/raw/main/data/GorgsGPT.png")
 
 st.markdown(
@@ -561,36 +564,37 @@ with messages:
 
 
 # Récupération de l'entrée utilisateur
-if prompt := st.chat_input("Say something to GorgsGUT"):
-    # Ajout du message utilisateur
-    st.session_state.chat_history.append(("user", prompt))
+with st.expander("💬 Control panel", expanded=True):
+    col1, col2, col3, col4 = st.columns(4)
 
-    # Réponse de GorgsGPT
-    response = f"Thanks for the {prompt} — but you’ll need to register via the toolbox at the bottom of the sidebar if you want a reply 😈"
-    st.session_state.chat_history.append(("assistant", response))
+    col1.toggle("YouGorgs", disabled=True)
 
-    # Affichage immédiat dans le container
-    messages.chat_message("user").write(prompt)
-    messages.chat_message("assistant").write(response)
+    if col2.button("🧹 Clean this mess"):
+        st.session_state.chat_history = []
+        st.rerun()
 
-col1, col2, col3, col4 = st.columns(4)
+    col3.write("Rate your experience:")
+    rate = col4.feedback("thumbs")
 
-col1.toggle("YouGorgs free trial", disabled=True)
+    if rate is None:
+        subh.subheader(":blue[🥸 GorgsGUT™ v2.26]")
+    elif rate == 1:
+        subh.subheader(":blue[🥹 GorgsGUT™ v2.26]")
+    else:
+        subh.subheader(":blue[😢 GorgsGUT™ v2.26]")
 
-if col2.button("🧹 Clean GorgsGPT"):
-    st.session_state.chat_history = []
-    st.rerun()
+    if prompt := st.chat_input("Say something to GorgsGUT™"):
 
-col3.write("Rate your experience:")
-rate = col4.feedback("thumbs")
+        # Ajout du message utilisateur
+        st.session_state.chat_history.append(("user", prompt))
 
-if rate is None:
-    subh.subheader(":blue[🥸 GorgsGUT™ v2.26]")
-elif rate == 1:
-    subh.subheader(":blue[🥹 GorgsGUT™ v2.26]")
-else:
-    subh.subheader(":blue[😢 GorgsGUT™ v2.26]")
+        # Réponse de GorgsGPT
+        response = f"Thanks for the {prompt} — but you’ll need to register via the toolbox at the bottom of the sidebar if you want a reply 😈"
+        st.session_state.chat_history.append(("assistant", response))
 
+        # Affichage immédiat dans le container
+        messages.chat_message("user").write(prompt)
+        messages.chat_message("assistant").write(response)
 
 st.divider()
 
