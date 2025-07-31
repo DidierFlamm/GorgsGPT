@@ -633,11 +633,12 @@ if not on:
 
     st.image(
         "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/M.ENSAM.H.A.png",
-        caption="© 226 MEHA by GorgsGPT",
+        caption="""MEHA  
+        © 226 GorgsGPT""",
     )
 
     st.link_button(
-        "Order now your MAGA Baseball Cap ! 🤑",
+        "Order your MAGA Baseball Cap now! 🤑",
         "https://www.amazon.fr/Chapeau-cheveux-R%C3%A9glable-Casquette-baseball/dp/B0CX9J72ZK/?th=1&psc=1",
         use_container_width=True,
         icon="⚾",
