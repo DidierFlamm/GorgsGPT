@@ -14,7 +14,7 @@ st.set_page_config(
         "Get Help": None,
         "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
-© 2025 K'ptn' 42 @ Kin 201
+© 226 K'ptn' 42 @ Kin 201
 ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
 """,
     },
@@ -564,11 +564,11 @@ with st.expander("💬 Control panel", expanded=True):
     rate = col3.feedback("thumbs")
 
     if rate is None:
-        subh.subheader(":blue[🥸 GorgsGUT v2.26]")
+        subh.subheader(":blue[🥸 GorgsGUT]")
     elif rate == 1:
-        subh.subheader(":blue[🥹 GorgsGUT v2.26]")
+        subh.subheader(":blue[🥹 GorgsGUT]")
     else:
-        subh.subheader(":blue[😢 GorgsGUT v2.26]")
+        subh.subheader(":blue[😢 GorgsGUT]")
 
     if prompt := st.chat_input("Say something to GorgsGUT™"):
 
