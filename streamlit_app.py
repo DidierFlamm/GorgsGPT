@@ -171,7 +171,7 @@ st.sidebar.link_button(
 )
 
 st.sidebar.subheader(
-    ":violet[🎛️ YouGorgs]", divider=True
+    ":red[🎛️ YouGorgs]", divider=True
 )  ########################################
 
 st.sidebar.caption(
