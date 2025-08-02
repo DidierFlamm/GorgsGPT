@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 st.logo(
-    "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amtradszaloeil.png",
+    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Kin201.png",
     size="large",
 )
 
@@ -678,9 +678,8 @@ if not on:
     st.divider()
 
     st.image(
-        "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/M.ENSAM.H.A.png",
-        caption="""ME🔥A  
-        © 226 GorgsGPT""",
+        "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Kin201.png",
+        caption="""© 226 Kin 201 by GorgsGPT""",
     )
 
     st.link_button(
