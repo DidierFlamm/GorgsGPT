@@ -399,7 +399,7 @@ st.sidebar.subheader(":orange[🛠️ Boîte à Oüt's]", divider=True)
 
 
 st.sidebar.link_button(
-    "Contacter WikiGorgs",
+    "Contacter WikiGorg's",
     "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact",
     use_container_width=True,
     icon="📡",
@@ -438,7 +438,7 @@ st.sidebar.link_button(
     icon="🚔",
 )
 
-check4 = st.sidebar.checkbox("J'ai compilé et validé la Privacy Policy de GorgsGPT.")
+check4 = st.sidebar.checkbox("J'ai compilé et validé la Privacy Policy.")
 
 st.sidebar.link_button(
     "Informations importantes",
@@ -448,7 +448,7 @@ st.sidebar.link_button(
 )
 
 check5 = st.sidebar.checkbox(
-    "J'ai compilé et validé les informations importantes de GorgsGPT."
+    "J'ai compilé et validé les informations importantes."
 )
 
 st.sidebar.link_button(
@@ -458,7 +458,7 @@ st.sidebar.link_button(
     icon="📜",
 )
 
-check6 = st.sidebar.checkbox("J'ai compilé et validé les CGU de GorgsGPT.")
+check6 = st.sidebar.checkbox("J'ai compilé et validé les CGU.")
 
 st.sidebar.link_button(
     "Circonstances Particulières",
@@ -467,7 +467,7 @@ st.sidebar.link_button(
     icon="⚠️",
 )
 
-check7 = st.sidebar.checkbox("J'ai compilé et validé les CPU de GorgsGPT.")
+check7 = st.sidebar.checkbox("J'ai compilé et validé les CPU.")
 
 disable_acc = True
 
@@ -534,7 +534,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 subh = st.empty()
-st.caption(":blue[Gorg's Gadz Untrained Transformer]")
+st.caption(":blue[Gorg's Gad'z Un'trained Tran'sformer]")
 
 # Initialisation de l'historique si besoin
 if "chat_history" not in st.session_state:
