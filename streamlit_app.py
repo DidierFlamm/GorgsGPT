@@ -411,7 +411,7 @@ check1 = st.sidebar.checkbox(
 
 st.sidebar.link_button(
     "Contacter Streamlit",
-    "https://discuss.streamlit.io/",
+    "https://docs.streamlit.io/knowledge-base/deploy/resource-limits",
     use_container_width=True,
     icon="💬",
 )
