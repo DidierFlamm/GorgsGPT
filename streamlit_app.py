@@ -8,20 +8,20 @@ import time
 
 st.set_page_config(
     page_title="GorgsGPT",
-    page_icon="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
+    page_icon="https://upload.wikimedia.org/wikipedia/commons/3/3a/Amtradszaloeil.png",
     initial_sidebar_state=None,
     menu_items={
         "Get Help": None,
         "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
-© 226 K'ptn' 42 @ Kin 201
-✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai) – 💬 [LinkedIn](https://www.linkedin.com/in/didier-flamm) – 📁 [Portfolio](https://share.streamlit.io/user/didierflamm)  
+© 201 K'ptn' 42
+✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai)  
 """,
     },
 )
 
 st.logo(
-    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
+    "https://upload.wikimedia.org/wikipedia/commons/3/3a/Amtradszaloeil.png",
     size="large",
 )
 
@@ -102,7 +102,7 @@ st.sidebar.subheader(f"{tabagns} {anns}", divider=True)  #######################
 
 vimeo_embed = """
 <iframe src="https://player.vimeo.com/video/1097107734?h=40d724f3ee" 
-    width="100%" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+    width="100%" height="180" frameborder="0" allow="autoplay; fullScreen" allowfullscreen>
 </iframe>
 """
 
@@ -147,11 +147,11 @@ else:
             icon="😅",
         )
 
-    st.sidebar.write(":violet[2. 📧 fam's|tabagn's|ann's@gadz.org]")
+    st.sidebar.write(":violet[2. 📧 Fam's|Tabagn's|ann's@gadz.org]")
 
     st.sidebar.link_button(
         "📧 PG Moys's",
-        f"mailto:fams|tabagns|anns@gadz.org",
+        "mailto:fams|tabagns|anns@gadz.org",
         use_container_width=True,
     )
 
@@ -278,7 +278,7 @@ with st.sidebar.expander(
     st.divider()
 
     st.write(
-        "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant n'importe quel lien YouTube ci-dessous:"
+        "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta vidéal Trad's en collant n'importe quel lien YouTube ci-dessous:"
     )
 
     yt = st.text_input(
@@ -290,14 +290,14 @@ with st.sidebar.expander(
             st.video(yt)
         except Exception:
             st.error(
-                "Desol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.",
+                "Désol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.",
                 icon="❌",
             )
 
 st.sidebar.subheader(":blue[📚 Z-Gorgs]", divider=True)
 
 st.sidebar.write(
-    "⚠️ GorgsGPT vous ouvre les portes, de façon temporaire mais gratuite, anonyme et illimitée à la plus grande bibliothèque du monde d'eBook's et d'articles Trad's. Aucun login ni mot de passe ne vous sera demandé (aussi longtemps que le Zident Rezal n'aura pas retrouvé son mot de passe admin's). Pas même un cookie 🍪. L'adresse Trad's risque de changer de temps en temps mais ne vous inquiétez pas: Z-Gorg's ne disparaîtra pas de si tôt. 🙈"
+    "⚠️ GorgsGPT vous ouvre les portes, de façon temporaire mais gratuite, anonyme et illimitée à la plus grande bibliothèque du monde d'eBook's et d'articles Trad's. Aucun login ni mot de passe ne vous sera demandé (aussi longtemps que le Zident Rézal n'aura pas retrouvé son mot de passe admin's). Pas même un cookie 🍪. L'adresse Trad's risque de changer de temps en temps mais ne vous inquiétez pas: Z-Gorg's ne disparaîtra pas de si tôt. 🙈"
 )
 
 st.sidebar.markdown(
@@ -581,7 +581,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 subh = st.empty()
-st.caption(":blue[Gorg's Gad'z Un'trained Tran'sformer™]")
+st.caption(":blue[Gorg's Gad'z Un'trained Transformer™]")
 
 # Initialisation de l'historique si besoin
 if "chat_history" not in st.session_state:
@@ -911,10 +911,9 @@ st.divider()
 st.markdown(
     """
     <div style='text-align: center; font-size: 0.8em; color: gray;'>
-    🎁 À Kin 226 et à toütes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
-    🤗 <a href="https://GorgsGPT.com/" target="_blank">GorgsGPT</a> est un chatbot open source utilisant l’API <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
+    🎁 <a href="https://GorgsGPT.com" target="_blank">GorgsGPT</a> est une application <a href="https://en.wiktionary.org/wiki/fraterns" target="_blank">fratern's</a>, <a href="https://fr.wiktionary.org/wiki/pythonique" target="_blank">pythonique</a> 🐍 et <a href="https://fr.wikipedia.org/wiki/Open_source" target="_blank">Open Source</a>, offerte à la <a href="https://www.usherbrooke.ca/admission/fiches-cours/KIN226" target="_blank">Kin 226</a>.<br>
     📜 Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
-    © 226 Kin 201<br>🫶
+    © 226 <a href="https://soundcloud.com/c-harren-centrum-liefde/kin-201-imix-red-rythmic" target="_blank">Kin 201</a><br>🫶
     </div>
     """,
     unsafe_allow_html=True,
