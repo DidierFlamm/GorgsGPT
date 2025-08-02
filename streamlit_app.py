@@ -222,10 +222,26 @@ with st.sidebar.expander(
         unsafe_allow_html=True,
     )
 
+    video_url = "https://www.youtube.com/watch?v=QwlJEhh5I0U&t=1333s"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 220 Fuckin Fred's feat. Orelsan 🍼</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
     video_url = "https://www.youtube.com/watch?v=lNfAtaURtBI"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
         """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Charlotte Cardin 📛</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    video_url = "https://www.youtube.com/embed/2of-QLp-OmQ"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Charlotte Cardin feat. Aliocha Schneider 🇨🇦</p>
         """,
         unsafe_allow_html=True,
     )
@@ -254,25 +270,29 @@ with st.sidebar.expander(
         unsafe_allow_html=True,
     )
 
+    st.divider()
 
-st.sidebar.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass")
-st.sidebar.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes coprom's.")
+    st.file_uploader("Upload ta videal Trad's:", disabled=True, key="strass")
+    st.caption("🤙 Soumis à la valid's préalable de l'ensemble de tes coprom's.")
 
-st.sidebar.write(
-    "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant n'importe quel lien YouTube ci-dessous:"
-)
+    st.divider()
 
-yt = st.sidebar.text_input(
-    "Lien YouTube:",
-)
+    st.write(
+        "⚠️ En attendant la valid's de tes coprom's, tu peux tester ta videal Trad's en collant n'importe quel lien YouTube ci-dessous:"
+    )
 
-if yt:
-    try:
-        st.sidebar.video(yt)
-    except Exception:
-        st.sidebar.error(
-            "Desol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.", icon="❌"
-        )
+    yt = st.text_input(
+        "Lien YouTube:",
+    )
+
+    if yt:
+        try:
+            st.video(yt)
+        except Exception:
+            st.error(
+                "Desol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.",
+                icon="❌",
+            )
 
 
 st.sidebar.subheader(
