@@ -360,7 +360,7 @@ st.sidebar.markdown(
 )
 
 st.sidebar.subheader(
-    ":violet[👍 GorgsGPT sur Facebook]", divider=True
+    ":blue[👍 GorgsGPT sur Facebook]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
@@ -387,7 +387,7 @@ st.sidebar.markdown(
 )
 
 
-st.sidebar.subheader(":blue[🌐 Gadzarts sur Wikipedia]", divider=True)
+st.sidebar.subheader("🌐 Gadzarts sur Wikipedia", divider=True)
 
 st.sidebar.markdown(
     """
@@ -544,17 +544,21 @@ st.sidebar.divider()
 
 st.sidebar.subheader("🖤 Trad's", divider=True)
 
-
-st.sidebar.image(
-    "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Amtradszaloeil.png",
-    caption="© 206 Guiral LACOTTE",
+st.sidebar.markdown(
+    """
+    <a href="https://commons.wikimedia.org/wiki/File:Amtradszaloeil.png" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Amtradszaloeil.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
 )
+
 
 st.sidebar.markdown(
     """
     <p style="text-align:center; font-size:0.8em; color:gray;">
     Image digitalisée, nettoyée et vectorialisée par un utilisateur
-    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">homonyme</a> 👀
+    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">homonyme</a>
     </p>
     """,
     unsafe_allow_html=True,
