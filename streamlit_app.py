@@ -334,6 +334,19 @@ if ad:
 st.sidebar.divider()
 
 st.sidebar.subheader(
+    ":violet[👾 GorgsGPT sur Discord]", divider=True
+)  ########################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Discord.webp" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(
     ":blue[🫂 GorgsGPT sur LinkedIn]", divider=True
 )  ########################################
 
@@ -347,17 +360,18 @@ st.sidebar.markdown(
 )
 
 st.sidebar.subheader(
-    ":violet[👾 GorgsGPT sur Discord]", divider=True
+    ":violet[👍 GorgsGPT sur Facebook]", divider=True
 )  ########################################
 
 st.sidebar.markdown(
     """
-    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
-        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Discord.webp" width="100%"; />
+    <a href="https://www.facebook.com/Trolling.fr" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/960px-Facebook_f_logo_%282019%29.svg.png" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
 )
+
 
 st.sidebar.subheader(
     ":green[💬 GorgsGPT sur WhatsApp]", divider=True
@@ -379,6 +393,19 @@ st.sidebar.markdown(
     """
     <a href="https://fr.wikipedia.org/wiki/Gadzarts" target="_blank">
         <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Wikipedia.png" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.sidebar.subheader(
+    ":blue[🏄‍♂️ Portfolio Streamlit Cloud]", divider=True
+)  ########################################
+
+st.sidebar.markdown(
+    """
+    <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
+        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
     </a>
     """,
     unsafe_allow_html=True,
@@ -410,23 +437,6 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-
-st.sidebar.subheader(
-    ":blue[🌊 Portfolio K'PTN' 42 🏄‍♂️]", divider=True
-)  ########################################
-
-st.sidebar.markdown(
-    """
-    <a href="https://share.streamlit.io/user/didierflamm" target="_blank">
-        <img src="https://github.com/DidierFlamm/DidierFlamm/raw/main/DID.png" width="100%"; />
-    </a>
-    """,
-    unsafe_allow_html=True,
-)
-st.sidebar.markdown(
-    "<p style='text-align: center; font-size: 14px; color: gray;'>© 2023 Didier Flamm</p>",
-    unsafe_allow_html=True,
-)
 
 st.sidebar.divider()
 
