@@ -913,7 +913,7 @@ st.markdown(
     <div style='text-align: center; font-size: 0.8em; color: gray;'>
     🎁 À Kin 226 et à toütes les Prom's, ce cadeau de bienvenue vous est offert par la puissance des Trad's de notre réseau Gad'z !<br>
     🤗 <a href="https://GorgsGPT.com/" target="_blank">GorgsGPT</a> est un chatbot open source utilisant l’API <a href="https://huggingface.co/" target="_blank">Hugging Face</a>.<br>
-    ⚠️ Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
+    📜 Licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank">CC BY-SA 4.0</a> sauf <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/Frequently_asked_questions#needaccount" target="_blank">rares circonstances</a>.<br>
     © 226 Kin 201<br>🫶
     </div>
     """,
