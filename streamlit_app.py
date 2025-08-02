@@ -175,7 +175,7 @@ st.sidebar.subheader(
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement YouTube Cloud Premium des Trad's: vous pouvez profiter des vidéos Trad's sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé 🙊"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement Media Content Authority (YMCA™): profitez librement de toutes vidéos Trad's de la plateforme Trad's YouTube sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé. 🙉"
 )
 
 with st.sidebar.expander(
@@ -293,6 +293,21 @@ with st.sidebar.expander(
                 "Desol's, le Gorgs ne trouve pas ta videal Trad's sur YouTube.",
                 icon="❌",
             )
+
+st.sidebar.subheader(":blue[📚 Z-Gorgs]", divider=True)
+
+st.sidebar.write(
+    "⚠️ GorgsGPT vous ouvre les portes, de façon temporaire mais gratuite, anonyme et illimitée à la plus grande bibliothèque du monde d'eBook's et d'articles Trad's. Aucun login ni mot de passe ne vous sera demandé (aussi longtemps que le Zident Rezal n'aura pas retrouvé son mot de passe admin's). Pas même un cookie 🍪. L'adresse Trad's risque de changer de temps en temps mais ne vous inquiétez pas: Z-Gorg's ne disparaîtra pas de si tôt. 🙈"
+)
+
+st.sidebar.markdown(
+    """
+    <a href="https://z-library.sk/" target="_blank">
+        <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Z-gorgs.svg" width="100%"; />
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
 
 
 st.sidebar.subheader(
@@ -467,9 +482,7 @@ st.sidebar.link_button(
     icon="🚨",
 )
 
-check5 = st.sidebar.checkbox(
-    "J'ai compilé et validé les informations importantes."
-)
+check5 = st.sidebar.checkbox("J'ai compilé et validé les informations importantes.")
 
 st.sidebar.link_button(
     "Licence CC BY-SA 4.0",
@@ -580,7 +593,6 @@ with st.expander("⚙️ Control panel", expanded=True):
         st.session_state.chat_history = []
         st.rerun()
 
-    
     rate = col3.feedback("thumbs")
 
     if rate is None:
