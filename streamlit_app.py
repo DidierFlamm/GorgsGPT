@@ -444,14 +444,14 @@ st.sidebar.subheader(":orange[🛠️ Boîte à Oüt's]", divider=True)
 
 
 st.sidebar.link_button(
-    "Contacter WikiGorg's",
+    "Contacter Wikipédia",
     "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Contact",
     use_container_width=True,
     icon="📡",
 )
 
 check1 = st.sidebar.checkbox(
-    "J'ai compilé et validé la procédure de contact WikiGorgs."
+    "J'ai compilé et validé la procédure de contact Wikipédia."
 )
 
 st.sidebar.link_button(
@@ -557,8 +557,8 @@ st.sidebar.markdown(
 st.sidebar.markdown(
     """
     <p style="text-align:center; font-size:0.8em; color:gray;">
-    Image digitalisée, nettoyée et vectorialisée par un utilisateur
-    <a href="https://fr.m.wikipedia.org/wiki/Utilisateur" target="_blank">homonyme</a>
+    Image digitalisée, nettoyée et revectorialisée par 
+    <a href="https://fr.wikipedia.org/wiki/Utilisateur:Baral" target="_blank">Baral</a>
     </p>
     """,
     unsafe_allow_html=True,
