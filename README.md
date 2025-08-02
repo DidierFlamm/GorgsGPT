@@ -1,4 +1,6 @@
 # GorgsGPT
-ChatBot en Argad'z créé par KIN 201 pour la cérémonie du Parainage 201-226.
+Online escape game 🕵️‍♂️  
+or is it an enter game ? 🧩
 
+Try it!
 👉 https://GorgsGPT.com
