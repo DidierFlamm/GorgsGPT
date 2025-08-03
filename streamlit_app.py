@@ -14,7 +14,7 @@ st.set_page_config(
         "Get Help": None,
         "Report a bug": "mailto:contact@diveintodata.ai?subject=Reporting%20a%20bug%20in%20GorgsGPT%20app&body=OS%20(Windows,%20macOS,%20Linux,%20Android,%20iOS):%0ABrowser:%0ABug%20you%20encountered:%0A%0AThanks!",
         "About": """## GorgsGPT
-© 201 K'ptn' 42
+Enter if you can.
 ✉️ [contact@diveintodata.ai](mailto:contact@diveintodata.ai)  
 """,
     },
