@@ -2,5 +2,5 @@
 Online escape game 🕵️‍♂️  
 or is it an enter game ? 🧩
 
-Try it!
+Try it!  
 👉 https://GorgsGPT.com
