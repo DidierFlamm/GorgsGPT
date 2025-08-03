@@ -679,7 +679,7 @@ if not on:
 
     st.image(
         "https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Kin201.png",
-        caption="""© 226 Kin 201 by GorgsGPT""",
+        caption="""© 226 GorgsGPT""",
     )
 
     st.link_button(
