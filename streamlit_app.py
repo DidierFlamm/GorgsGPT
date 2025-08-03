@@ -581,7 +581,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 subh = st.empty()
-st.caption(":blue[Gorg's Gad'z Un'trained Transformer™]")
+st.caption(":blue[Gorgs Gadz Untrained Transformer]")
 
 # Initialisation de l'historique si besoin
 if "chat_history" not in st.session_state:
