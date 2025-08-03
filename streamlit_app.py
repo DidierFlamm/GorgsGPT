@@ -175,7 +175,7 @@ st.sidebar.subheader(
 )  ########################################
 
 st.sidebar.caption(
-    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement Youtube Media Content Authority (YMCA™): profitez librement de toutes vidéos Trad's de la plateforme Trad's YouTube sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou bien avec l'écran de votre mobile verrouillé. 🙉"
+    "⚠️ GorgsGPT vous offre un accès gratuit et illimité à un abonnement Youtube Media Content Authority (YMCA): profitez librement de toutes les vidéos Trad's de la plateforme YouTube sans publicité (à condition de ne pas cliquer sur la mention YouTube présente sur toutes les vidéos) en HD plein écran ou avec l'écran de votre mobile verrouillé. 🙉"
 )
 
 with st.sidebar.expander(
