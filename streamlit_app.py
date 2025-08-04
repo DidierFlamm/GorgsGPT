@@ -238,10 +238,10 @@ with st.sidebar.expander(
         unsafe_allow_html=True,
     )
 
-    video_url = "https://www.youtube.com/embed/2of-QLp-OmQ"
+    video_url = "https://https://youtube.com/embed/SliRBnx5zyw"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
-        """<p style="text-align:center; font-size:0.8em; color:gray;">© Charlotte Cardin feat. Aliocha Schneider 🇨🇦</p>
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Charlotte Cardin 😘</p>
         """,
         unsafe_allow_html=True,
     )
@@ -249,7 +249,7 @@ with st.sidebar.expander(
     video_url = "https://www.youtube.com/watch?v=4m73Cm2H0xM"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
-        """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Kream 🏃</p>
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 222 Kream ⛰️</p>
         """,
         unsafe_allow_html=True,
     )
