@@ -185,7 +185,7 @@ with st.sidebar.expander(
     video_url = "https://www.youtube.com/watch?v=CJVtr9vUwCQ"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
-        """<p style="text-align:center; font-size:0.8em; color:gray;">© Kin 201 🤓</p>
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© Kin 201 Road feat. Dany 💙</p>
         """,
         unsafe_allow_html=True,
     )
