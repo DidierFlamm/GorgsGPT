@@ -355,7 +355,7 @@ st.sidebar.subheader(
 
 st.sidebar.markdown(
     """
-    <a href="https://discord.gg/gxBZvWWVyX" target="_blank">
+    <a href="https://discord.gg/qxp2TPnyyh" target="_blank">
         <img src="https://github.com/DidierFlamm/GorgsGPT/raw/main/data/Discord.webp" width="100%"; />
     </a>
     """,
