@@ -222,6 +222,14 @@ with st.sidebar.expander(
         unsafe_allow_html=True,
     )
 
+    video_url = https://youtu.be/hvOt8VPvKig
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 219 Nesco 🏖️</p>
+        """,
+        unsafe_allow_html=True,
+    )
+    
     video_url = "https://www.youtube.com/watch?v=QwlJEhh5I0U&t=1333s"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
