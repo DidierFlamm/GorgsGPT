@@ -214,6 +214,14 @@ with st.sidebar.expander(
         unsafe_allow_html=True,
     )
 
+    video_url = "https://youtu.be/ZuMssIxmPT0"
+    st.video(video_url, autoplay=False, muted=False)
+    st.markdown(
+        """<p style="text-align:center; font-size:0.8em; color:gray;">© 218 Vald ✊</p>
+        """,
+        unsafe_allow_html=True,
+    )
+
     video_url = "https://www.youtube.com/watch?v=mAUj_nAe2x4"
     st.video(video_url, autoplay=False, muted=False)
     st.markdown(
